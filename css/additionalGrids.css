@@ -1,0 +1,27 @@
+.amBulletPicture{
+    display: grid;
+    grid-template-columns: 67% 33%;
+   
+   }
+
+   .amTitlePicture{
+    display: grid;
+    grid-template-columns: 33% 67%;
+   }
+
+   .amSmallBulletPicture{
+       display:grid;
+       grid-template-columns:20% 80%;
+   }
+
+.videoPage{
+    display:grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 100px 400px;
+}
+
+.imageTopBullet{
+    display:grid;
+    grid-template-rows: 40px 10px;
+}
+

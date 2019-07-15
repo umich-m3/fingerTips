@@ -1,0 +1,128 @@
+.amListingColumns{
+    display: grid;
+    grid-template-columns: 6% 2% 29% 25%;
+    color:white;
+   
+   }
+
+.titleStyling{
+    text-align:center;
+    margin-top:25px;
+    font-size:18px;
+    font-style:helvetica-nue;
+}
+
+.supranuclearTitleStyling{
+    text-align:center;
+    margin-top:25px;
+    font-size:18px;
+    font-style:helvetica-nue
+}
+
+.amBodyColumns{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+
+
+@media (max-width: 900px) and (min-width: 751px){
+    .amListingColumns{
+        display: grid;
+        grid-template-columns: 8% 2% 29% 25%;
+        color:white;
+        column-gap: 10px;
+       }
+}
+
+@media (max-width: 750px) and (min-width: 500px){
+    .amListingColumns{
+        display: grid;
+        grid-template-columns: 6% 2% 29% 25%;
+        color:white;
+        column-gap: 10px;
+       }
+}
+
+@media (max-width: 500px) and (min-width: 400px) {
+    .amListingColumns{
+        display: grid;
+        grid-template-columns: 6% 3% 22% 25%;
+        color:white;
+        column-gap: 20px;
+       }
+}
+   
+
+@media (min-width: 1px) and (max-width: 399px){
+    .amListingColumns{
+        display: grid;
+        grid-template-columns: 6% 3% 8% 25%;
+        color:white;
+        column-gap: 30px;
+       }
+}
+
+
+@media (max-width:723px){
+    .titleStyling{
+        text-align:center;
+        margin-top:10px;
+        font-size:18px;
+        font-style:helvetica-nue
+    }
+}
+
+@media (max-width:723px){
+    .titleStyling{
+        text-align:center;
+        margin-top:10px;
+        font-size:18px;
+        font-style:helvetica-nue
+    }
+}
+
+@media (max-width:400px){
+    .titleStyling{
+        text-align:center;
+        margin-top:10px;
+        font-size:15px;
+        font-style:helvetica-nue
+    }
+}
+
+@media (max-width:905px) and (min-width:724px) {
+    .supranuclearTitleStyling{
+        text-align:center;
+        margin-top:15px;
+        font-size:15px;
+        font-style:helvetica-nue
+    }
+}
+
+@media (max-width:724px) and (min-width:470px) {
+    .supranuclearTitleStyling{
+        text-align:center;
+        margin-top:10px;
+        font-size:15px;
+        font-style:helvetica-nue
+    }
+}
+
+
+@media (max-width:469px) and (min-width:383px) {
+    .supranuclearTitleStyling{
+        text-align:center;
+        margin-top:10px;
+        font-size:12px;
+        font-style:helvetica-nue
+    }
+}
+
+@media (max-width:382px) and (min-width:1px) {
+    .supranuclearTitleStyling{
+        text-align:center;
+        margin-top:10px;
+        font-size:10px;
+        font-style:helvetica-nue
+    }
+}

@@ -1,0 +1,70 @@
+.amOneIndent{
+    font-size: 16px;
+}
+
+.amTwoIndent{
+    font-size: 14px;
+}
+
+.anThreeIndent{
+    font-size: 12px;
+}
+
+.amTRAP{
+    color:rgb(226, 24, 24);
+    font-size: 20px;
+
+}
+
+.amSmallerTRAP{
+    color:rgb(226, 24, 24);
+    font-size: 18px;
+
+}
+
+.am3SmallerTRAP{
+    color:rgb(226, 24, 24);
+    font-size: 14px;
+}
+
+
+.amTIP{
+    color:rgb(14, 241, 33);
+    font-size: 20px;
+}
+
+.amSmallerTIP{
+    color:rgb(14, 241, 33);
+    font-size: 18px;
+}
+
+.am3SmallerTIP{
+    color:rgb(14, 241, 33);
+    font-size: 14px;
+}
+
+.amBlueNormal{
+   background-color:#00274C;
+}
+
+.amMaizeNormal{
+    background-color:#FFCB05;
+}
+
+nav .nav-pills .amBlueNormal:hover{
+    background-color:pink;
+}
+
+.amMenu{
+    color:white;
+}
+
+.homeMenuIcon{
+    width:75px;
+    height:50px;
+}
+
+body{
+    font-size:18px;
+}
+
