@@ -26,12 +26,20 @@
 <body>
  
     <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
-        <div class="amListingColumns">
-            
-            <span style="font-size:50px;cursor:pointer" onclick="openCloseNav()">&#9776; </span>
-            <a id="goBack" href="Prechiasmal.html"><span class="glyphicon glyphicon-chevron-left" style="margin-top:21px;font-size:25px;color:white"></span></a>
-            <a id="goBack" href="Retrochiasmal_Segment.html"><span class="glyphicon glyphicon-chevron-right" style="margin-top:20.5px;font-size:25px;color:white;"></span></a>
-               
+        
+            <div class="amListingColumns">
+      
+                <span class="menuSize" style="cursor:pointer;font-size:50px;" onclick="openCloseNav()">&#9776; </span>
+          
+                <div class="amTwoArrows">
+              <a id="" href="Prechiasmal.html" style=""><span class="glyphicon glyphicon-chevron-left" style="font-size:30px;color:white;"></span></a>
+              <div></div>
+              <a id="" href="Retrochiasmal_Segment.html" style=""><span class="glyphicon glyphicon-chevron-right" style="font-size:30px;color:white;"></span></a>
+          
+            </div>
+          
+            <div></div>
+
                <span class="titleStyling scrapeMeTitle" > Vision Pathways </span>
         </div>
        </nav>
@@ -43,9 +51,13 @@
            <h1 style="text-align:center;">Chiasmal Segment</h1>
            <span id="bookmark" class="glyphicon glyphicon-star pull-right"></span>
            <div></div>
-           <div id="wrapper" style="width:100%;"> 
-               <img src="../images/Vision_Pathways/Chiasmal_Segment.PNG" class="img-responsive" width="400" height="325" style="max-width:100%; height:auto;margin-left:auto;margin-right:auto;margin-bottom:5%;">   
-               </div>
+           <div id="wrapper" style="padding-bottom:2%;"> 
+              <li style="list-style-type:none;">
+                  <a href="#imgModal" data-toggle="modal" data-img-url="../images/Vision_Pathways/Chiasmal_Segment.PNG"></a>
+                    <img src="../images/Vision_Pathways/Chiasmal_Segment.PNG" class="img-responsive" style="max-width: 70%;max-height:auto;margin-left:10%;display:absolute;" >   
+                  </a>
+            </li>  
+              </div>
              <div></div>
              <div></div>
      <!-- Panel Group with more than one panel allowed to be open at a time -->
@@ -98,10 +110,16 @@
   <div id="collapseThree" class="panel-collapse collapse">
    <div class="panel-body">
   <ul>
-      <li>
-        <strong>Too Long For Hover</strong>
+      <div class="boxHidden2">
+          <img src="../images/Vision_Pathways/hemifield.gif" style="width:380px;height:225px;">
+        </div>
+
+      <li style="margin-top:-1%;">
         Redirects path of optic nerve axons so that they will eventually represent vision in cerebral hemispheres according to hemifields rather than as single eye fields  
-        <a href="#" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/tIOyFsBwUuY?rel=0&amp;showinfo=0">Chiasmal Sorting</a>                 
+        <div class="hoverMe2" style="display:inline;"> 
+            <a href="#imgModal" data-toggle="modal" data-img-url="../images/Vision_Pathways/hemifield.gif"></a>
+           </div>
+
       </li>
 
       <li>
@@ -144,6 +162,30 @@
           <strong>No Hover TO Match Others</strong>
         Bitemporal hemianopic defects: lesion lies in or around optic chiasm, preferentially damaging nasal crossing fibers, which are especially vulnerable 
         <a href="#" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/tIOyFsBwUuY?rel=0&amp;showinfo=0">Crossing Fibers Lesion</a>                  
+
+      </li>
+
+      <div class="boxHidden3">
+          <img src="../images/Vision_Pathways/ThreeChiasmalDefects.jpg" style="width:380px;height:225px;">
+        </div>
+      <li style="margin-top:-1%;">
+      	Here is another look at the three patterns of visual field defects of chiasmal area lesions  
+        <div class="hoverMe3" style="display:inline;"> 
+            <a href="#imgModal" data-toggle="modal" data-img-url="../images/Vision_Pathways/ThreeChiasmalDefects.jpg"></a>
+           </div>
+      </li>
+
+      <div class="boxHidden4">
+          <img src="../images/Vision_Pathways/ImagingThreeChiasmalLesions.jpg" style="width:380px;height:225px;">
+        </div>
+      <li style="margin-top:-1%;">
+        <div class="amTIP">
+          <strong>Tip: </strong>
+          chiasmal area lesions are usually caused by tumor, cyst, or aneurysm—often successfully treated, especially if diagnosis comes early!  
+          <div class="hoverMe4" style="display:inline;"> 
+              <a href="#imgModal" data-toggle="modal" data-img-url="../images/Vision_Pathways/ImagingThreeChiasmalLesions.jpg"></a>
+             </div>
+        </div>
 
       </li>
    </ul>

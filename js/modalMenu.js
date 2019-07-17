@@ -110,6 +110,74 @@ function openCloseNav() {
       $(".boxHidden12").css("visibility","hidden")
     });
 
+    $(".hoverMe12").mouseover(function(){
+      $(".boxHidden12").css("visibility","visible")
+    });
+
+    $(".hoverMe13").mouseout(function(){
+      $(".boxHidden13").css("visibility","hidden")
+    });
+
+    $(".hoverMe13").mouseover(function(){
+      $(".boxHidden13").css("visibility","visible")
+    });
+
+    $(".hoverMe14").mouseout(function(){
+      $(".boxHidden14").css("visibility","hidden")
+    });
+
+    $(".hoverMe14").mouseover(function(){
+      $(".boxHidden14").css("visibility","visible")
+    });
+
+    $(".hoverMe15").mouseover(function(){
+      $(".boxHidden15").css("visibility","visible")
+    });
+    
+    $(".hoverMe15").mouseout(function(){
+      $(".boxHidden15").css("visibility","hidden")
+    });
+
+    $(".hoverMe16").mouseover(function(){
+      $(".boxHidden16").css("visibility","visible")
+    });
+
+    $(".hoverMe16").mouseout(function(){
+      $(".boxHidden16").css("visibility","hidden")
+    });
+
+    $(".hoverMe17").mouseover(function(){
+      $(".boxHidden17").css("visibility","visible")
+    });
+
+    $(".hoverMe17").mouseout(function(){
+      $(".boxHidden17").css("visibility","hidden")
+    });
+
+    $(".hoverMe18").mouseover(function(){
+      $(".boxHidden18").css("visibility","visible")
+    });
+
+    $(".hoverMe18").mouseout(function(){
+      $(".boxHidden18").css("visibility","hidden")
+    });
+
+    $(".hoverMe19").mouseover(function(){
+      $(".boxHidden19").css("visibility","visible")
+    });
+
+    $(".hoverMe19").mouseout(function(){
+      $(".boxHidden19").css("visibility","hidden")
+    });
+
+    $(".hoverMe20").mouseover(function(){
+      $(".boxHidden20").css("visibility","visible")
+    });
+
+    $(".hoverMe20").mouseout(function(){
+      $(".boxHidden20").css("visibility","hidden")
+    });
+
   }
   
  

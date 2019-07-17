@@ -13,34 +13,40 @@
 .amTRAP{
     color:rgb(226, 24, 24);
     font-size: 20px;
+    font-style:italic;
 
 }
 
 .amSmallerTRAP{
     color:rgb(226, 24, 24);
     font-size: 18px;
+    font-style:italic;
 
 }
 
 .am3SmallerTRAP{
     color:rgb(226, 24, 24);
-    font-size: 14px;
+    font-size: 16px;
+    font-style:italic;
 }
 
 
 .amTIP{
-    color:rgb(14, 241, 33);
+    color:rgb(11, 175, 25);
     font-size: 20px;
+    font-style:italic;
 }
 
 .amSmallerTIP{
-    color:rgb(14, 241, 33);
+    color:rgb(11, 175, 25);;
     font-size: 18px;
+    font-style:italic;
 }
 
 .am3SmallerTIP{
-    color:rgb(14, 241, 33);
-    font-size: 14px;
+    color:rgb(11, 175, 25);
+    font-size: 16px;
+    font-style:italic;
 }
 
 .amBlueNormal{
@@ -67,4 +73,20 @@ nav .nav-pills .amBlueNormal:hover{
 body{
     font-size:18px;
 }
+
+
+.amCenter{
+    margin-left:28%;
+    margin-bottom:20px;
+    width:50%;
+}
+
+
+li{
+    margin-top:.5%;
+}
+
+
+
+
 

@@ -294,8 +294,146 @@
    
   }
 
+  .boxHidden14 {
+    visibility: hidden;
+    color: #fff;
+    text-align: center;
+    position:relative;
+    display:inherit;
+    width:10px;
+    height:10px;
+    bottom:250px;
+    -webkit-transition: .1s ease-in-out;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+    -webkit-transition-delay: .05s; 
+    transition-delay: .1s;
+    margin-left:30%;
+   
+  }
 
 
+  .boxHidden15 {
+    visibility: hidden;
+    color: #fff;
+    text-align: center;
+    position:relative;
+    display:inherit;
+    width:10px;
+    height:10px;
+    bottom:250px;
+    -webkit-transition: .1s ease-in-out;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+    -webkit-transition-delay: .05s; 
+    transition-delay: .1s;
+    margin-left:30%;
+   
+  }
+
+  .boxHidden16 {
+    visibility: hidden;
+    color: #fff;
+    text-align: center;
+    position:relative;
+    display:inherit;
+    width:10px;
+    height:10px;
+    bottom:250px;
+    -webkit-transition: .1s ease-in-out;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+    -webkit-transition-delay: .05s; 
+    transition-delay: .1s;
+    margin-left:30%;
+   
+  }
+
+  .boxHidden17 {
+    visibility: hidden;
+    color: #fff;
+    text-align: center;
+    position:relative;
+    display:inherit;
+    width:10px;
+    height:10px;
+    bottom:250px;
+    -webkit-transition: .1s ease-in-out;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+    -webkit-transition-delay: .05s; 
+    transition-delay: .1s;
+    margin-left:30%;
+   
+  }
+
+  .boxHidden18 {
+    visibility: hidden;
+    color: #fff;
+    text-align: center;
+    position:relative;
+    display:inherit;
+    width:10px;
+    height:10px;
+    bottom:250px;
+    -webkit-transition: .1s ease-in-out;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+    -webkit-transition-delay: .05s; 
+    transition-delay: .1s;
+    margin-left:30%;
+   
+  }
+
+  .boxHidden19 {
+    visibility: hidden;
+    color: #fff;
+    text-align: center;
+    position:relative;
+    display:inherit;
+    width:10px;
+    height:10px;
+    bottom:250px;
+    -webkit-transition: .1s ease-in-out;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+    -webkit-transition-delay: .05s; 
+    transition-delay: .1s;
+    margin-left:30%;
+   
+  }
+
+  .boxHidden20 {
+    visibility: hidden;
+    color: #fff;
+    text-align: center;
+    position:relative;
+    display:inherit;
+    width:10px;
+    height:10px;
+    bottom:250px;
+    -webkit-transition: .1s ease-in-out;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+    -webkit-transition-delay: .05s; 
+    transition-delay: .1s;
+    margin-left:30%;
+   
+  }
 
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}

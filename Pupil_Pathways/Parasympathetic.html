@@ -27,16 +27,25 @@
 <body>
  
     <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+
         <div class="amListingColumns">
-            
-            <span style="font-size:50px;cursor:pointer" onclick="openCloseNav()">&#9776; </span>
-            
-            <a id="goBack" href="Sympathetic.html"><span class="glyphicon glyphicon-chevron-left" style="margin-top:21px;font-size:25px;color:white"></span></a>
-            <a id="goBack" href="Sympathetic.html"><span class="glyphicon glyphicon-chevron-right" style="margin-top:20.5px;font-size:25px;color:white;"></span></a>
-               
-               <span class="titleStyling scrapeMeTitle" > Pupil Pathways </span>
+  
+            <span class="menuSize" style="cursor:pointer;font-size:50px;" onclick="openCloseNav()">&#9776; </span>
+      
+            <div class="amTwoArrows">
+                
+          <a id="" href="Sympathetic.html" style=""><span class="glyphicon glyphicon-chevron-left" style="font-size:30px;color:white;"></span></a>
+          <div></div>
+          <a id="" href="Sympathetic.html" style=""><span class="glyphicon glyphicon-chevron-right" style="font-size:30px;color:white;"></span></a>
+          
+          
         </div>
-       </nav>
+      
+        <div></div>
+
+           <span class="titleStyling scrapeMeTitle" > Pupil Pathways </span>
+    </div>
+   </nav>
 
 
        <div class="amBodyColumns">
@@ -45,10 +54,13 @@
            <h1 style="text-align:center;">Parasympathetic</h1>
            <span id="bookmark" class="glyphicon glyphicon-star pull-right"></span>
            <div></div>
-           <div id="wrapper" style="width:100%;"> 
-                
-               <img src="../images/Pupil_Pathways/entirePathwayGreen.jpg" class="img-responsive" width="475" height="362" style="max-width:100%; height:auto;margin-left:auto;margin-right:auto;margin-bottom:5%;">   
-               </div>
+           <div id="wrapper" style="margin-left:auto;margin-right:auto;padding-bottom:2%;"> 
+              <li style="list-style-type:none;">
+                  <a href="#imgModal" data-toggle="modal" data-img-url="../images/Pupil_Pathways/entirePathwayGreen.png">
+               <img src="../images/Pupil_Pathways/entirePathwayGreen.png" class="img-responsive  col-xs-12" style="max-width: 75%;max-height:auto;margin-left:15%;display:absolute;">   
+               </a>
+              </li>
+              </div>
              <div></div>
              <div></div>
      <!-- Panel Group with more than one panel allowed to be open at a time -->
@@ -166,7 +178,7 @@
       </li>
 
       <div class="boxHidden7">
-          <img src="../images/Pupil_Pathways/preGanglonic.gif" style="width:380px;height:225px;">
+          <img src="../images/Pupil_Pathways/postGanglonic.gif" style="width:380px;height:225px;">
        </div>
 
        <div class="boxHidden8">
@@ -177,7 +189,8 @@
       <li style="margin-top:-2%;">
         “Post-ganglionic” axons leaving ciliary ganglia in short ciliary nerves carry signals
        <div class="hoverMe7" style="display:inline;margin-right:1%;">
-          <a href="#imgModal" data-toggle="modal" data-img-url="../images/Pupil_Pathways/postGangolin.gif"></a>
+        <strong>Redownload Video </strong>
+          <a href="#imgModal" data-toggle="modal" data-img-url="../images/Pupil_Pathways/postGanglonic.gif"></a>
        </div>
 
         to both iris sphincters for pupil constriction 
@@ -207,8 +220,10 @@
           <img src="../images/Pupil_Pathways/opticNerveLesion.gif" style="width:380px;height:225px;">
        </div>
 
-
-      <li style="margin-top:-1%;">
+       <div class="boxHidden9">
+          <img src="../images/Pupil_Pathways/equalDistributionTectum.gif" style="width:380px;height:225px;">
+       </div>
+      <li style="margin-top:-2.4%;">
         
         Lesion of one optic nerve
         <div class="hoverMe8" style="display:inline;">
@@ -217,7 +232,8 @@
 
         <ul class="amOneIndent">
           <li>
-          Causes afferent pupil defect 
+          Produces afferent pupil defect  
+          <a href="#" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/AEL0xeJ_NSw?rel=0&amp;showinfo=0">Afferent Pupil Defect</a>   
           </li>
 
           <li>
@@ -230,93 +246,179 @@
               <em>
               anisocoria does not occur because visual input is distributed equally to iris sphincter muscles in both eyes  
             </em>
+            <div class="hoverMe9" style="display:inline;">
+                <a href="#imgModal" data-toggle="modal" data-img-url="../images/Pupil_Pathways/equalDistributionTectum.gif"></a>
+              </div>
             </div>
           </li>
         </ul>
       </li>
 
-      <li>
+      <div class="boxHidden10">
+          <img src="../images/Pupil_Pathways/bilateralOpticNerveLesion.gif" style="width:380px;height:225px;">
+       </div>
+
+      <li style="margin-top:-1.2%;">
         Lesion of both optic nerves
+        <div class="hoverMe10" style="display:inline;">
+            <a href="#imgModal" data-toggle="modal" data-img-url="../images/Pupil_Pathways/bilateralOpticNerveLesion.gif"></a>
+          </div>
         <ul class="amOneIndent">
+          
           <li>
-            Eliminates pupil constriction to light stimuli  
+            Reduces pupil constriction in both eyes to light stimuli   
           </li>
 
+          <li>
+            <div class="amSmallerTRAP">
+            <strong>Trap: </strong>
+            an afferent pupil defect will not occur when there is equal damage to both optic nerves  
+          </div>
+          </li>
           <li>
           Preserves pupil constriction to near target (“afferent light-near dissociation”) 
-          </li>
+          <a href="#" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/AEL0xeJ_NSw?rel=0&amp;showinfo=0">Afferent Light Near Dissociation</a>     
+        </li>
         </ul>
       </li>
 
-      <li>
+      <div class="boxHidden11">
+          <img src="../images/Pupil_Pathways/bilateralOpticNerveLesion.gif" style="width:380px;height:225px;">
+       </div>
+
+
+      <li style="margin-top:-1.2%;">
         Lesion of one optic tract
+        <div class="hoverMe11" style="display:inline;">
+            <a href="#imgModal" data-toggle="modal" data-img-url="../images/Pupil_Pathways/bilateralOpticNerveLesion.gif"></a>
+          </div>
         <ul class="amOneIndent">
           <li>
-          Causes contralateral afferent pupil defect (because optic chiasm crossing axons outnumber non-crossing axons) 
+          Produces contralateral afferent pupil defect (because optic chiasm crossing axons outnumber non-crossing axons) 
           </li>
 
           <li>
-          Causes contralateral homonymous hemianopia 
+          Produces contralateral homonymous hemianopia 
           </li>
         </ul>
       </li>
 
-      <li>
+      <div class="boxHidden12">
+          <img src="../images/Pupil_Pathways/bilateralOpticNerveLesion.gif" style="width:380px;height:225px;">
+       </div>
+
+      <li style="margin-top:-1.2%;">
       Lesion of one brachium of superior colliculus
+      <div class="hoverMe12" style="display:inline;">
+          <a href="#imgModal" data-toggle="modal" data-img-url="../images/Pupil_Pathways/bilateralOpticNerveLesion.gif"></a>
+        </div>
       <ul class="amOneIndent">
         <li>
-        Causes contralateral afferent pupil defect  
+        Produces contralateral afferent pupil defect  
         </li>
 
         <li>
-          Does not cause visual field defect (because does not interrupt visual pathway)
+          <div class="amSmallerTRAP">
+            <strong>Trap: </strong>
+          does not cause visual field defect (because does not interrupt visual pathway)
+      </div>
         </li>
       </ul> 
       </li>
 
+      <div class="boxHidden13">
+          <img src="../images/Pupil_Pathways/tectalLesion.gif" style="width:380px;height:225px;">
+       </div>
+
       <li>
-      Lesion of dorsal midbrain 
+      Lesion of dorsal midbrain
+      <div class="hoverMe13" style="display:inline;">
+          <a href="#imgModal" data-toggle="modal" data-img-url="../images/Pupil_Pathways/tectalLesion.gif"></a>
+        </div> 
       <ul class="amOneIndent">
         <li>
-        Causes large pupils and impairs pupil constriction to light in both eyes (“tectal pupils”)  
+        Produces large pupils and impairs pupil constriction to light in both eyes (“tectal pupils”)  
         </li>
 
         <li>
         Spares pupil constriction to a visual target placed near the eye (because cerebral signals reach the Edinger Westphal nuclei through a more ventral pathway) (“tectal light-near dissociation”) 
-        </li>
+       <strong>Video Missing</strong> <a href="#" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/AEL0xeJ_NSw?rel=0&amp;showinfo=0">Tectal Pupils</a>   
+      </li>
       </ul>
       </li>
 
+      <div class="boxHidden14">
+          <img src="../images/Pupil_Pathways/preganglionicLesion.gif" style="width:380px;height:225px;">
+       </div>
+
       <li>
         Lesion of third nerve
+        <div class="hoverMe14" style="display:inline;">
+            <a href="#imgModal" data-toggle="modal" data-img-url="../images/Pupil_Pathways/preganglonicLesion.gif"></a>
+          </div>
         <ul class="amOneIndent">
           <li>
-        Causes ipsilateral mydriasis and impairment of pupil constriction to light  
-          </li>
+            Produces
+            <ul class="amTwoIndent">
+                <li>
+                  Mydriasis and impairment of pupil constriction to light 
+                    </li>
 
-          <li>
-          Causes ipsilateral ptosis 
-          </li>
+                <li>
+                  Ptosis
+                </li>
 
-          <li>
-          Causes ipsilateral ductional deficits 
+                <li>
+              	Ocular ductional deficits 
+                </li>
+
+                <li>
+                  <div class="am3SmallerTRAP">
+                    <strong>Trap: </strong>
+                    third nerve lesions never produce mydriasis as isolated clinical abnormality  
+                  </div>
+                </li>
+            </ul>
           </li>
+        
         </ul>
       </li>
 
+      <div class="boxHidden16">
+          <img src="../images/Pupil_Pathways/postGanglonicLegion.gif" style="width:380px;height:225px;">
+       </div>
       <li>
        Lesion of ciliary ganglion or post-ganglionic ciliary nerves
+       <div class="hoverMe16" style="display:inline;">
+          <a href="#imgModal" data-toggle="modal" data-img-url="../images/Pupil_Pathways/postGanglonicLegion.gif"></a>
+        </div>
        <ul class="amOneIndent">
          <li>
-          Causes ipsilateral mydriasis 
-         </li>
+           Produces
+           <ul class="amTwoIndent">
+             <li>
+              	Mydriasis 
+             </li>
 
-         <li>
-        Causes poor pupil constriction to light and slow segmental constriction to target placed near the eye (“tonic light-near dissociation”) 
-         </li>
+             <li>
+            	Poor pupil constriction to light and slow segmental constriction to target placed near the eye (tonic light-near dissociation) 
+             </li>
 
-         <li>
-        Causes pupil constriction to dilute pilocarpine  
+             <li>
+              Slow redilatation of pupil after prolonged viewing of near target  
+             </li>
+
+             <li>
+              Pupil constriction following instillation of dilute pilocarpine eyedrops 
+             </li>
+
+             <li>
+               <div class="am3SmallerTIP">
+                 <strong>Tip: </strong>
+                 tonic features are diagnostic of postganglionic lesion and preclude the need to investigate for third nerve palsy or other intracranial process  
+               </div>
+             </li>
+           </ul>
          </li>
        </ul>
       </li>

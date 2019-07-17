@@ -27,16 +27,25 @@
  
         <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
                 <div class="amListingColumns">
-                    
-                    <span style="font-size:50px;cursor:pointer" onclick="openCloseNav()">&#9776; </span>
-                   
-                    <a id="goBack" href="Section_Overview.html"><span class="glyphicon glyphicon-chevron-left" style="margin-top:21px;font-size:25px;color:white"></span></a>
-                    <a id="goBack" href="Prechiasmal.html"><span class="glyphicon glyphicon-chevron-right" style="margin-top:20.5px;font-size:25px;color:white;"></span></a>
-                       
+      
+                        <span class="menuSize" style="cursor:pointer;font-size:50px;" onclick="openCloseNav()">&#9776; </span>
+                  
+                        <div class="amTwoArrows">
+                            
+                      <a id="" href="Section_Overview.html" style=""><span class="glyphicon glyphicon-chevron-left" style="font-size:30px;color:white;"></span></a>
+                      <div></div>
+                      <a id="" href="Prechiasmal.html" style=""><span class="glyphicon glyphicon-chevron-right" style="font-size:30px;color:white;"></span></a>
+                      
+                      
+                    </div>
+                  
+                    <div></div>
                        <span class="titleStyling scrapeMeTitle" > Vision Pathways </span>
                 </div>
                </nav>
  
+
+               
  
            <div class="amBodyColumns">
      
@@ -44,8 +53,12 @@
                <h1 style="text-align:center;">Optical Segment</h1>
                <span id="bookmark" class="glyphicon glyphicon-star pull-right"></span>
                <div></div>
-               <div id="wrapper" style="width:100%;"> 
-                   <img src="../images/Vision_Pathways/Optical_Segments.PNG" class="img-responsive" width="400" height="325" style="max-width:100%; height:auto;margin-left:auto;margin-right:auto;margin-bottom:5%;">   
+               <div id="wrapper" style="padding-bottom:2%;"> 
+                    <li style="list-style-type:none;">
+                            <a href="#imgModal" data-toggle="modal" data-img-url="../images/Vision_Pathways/Optical_Segments.PNG">
+                              <img src="../images/Vision_Pathways/Optical_Segments.PNG" class="img-responsive  col-xs-12" style="max-width: 70%;max-height:auto;margin-left:10%;display:absolute;">   
+                            </a>
+                          </li>
                    </div>
                  <div></div>
                  <div></div>
@@ -102,7 +115,21 @@
          <div class="panel-body">
          <ul> 
               <li>Uses refractive power of cornea (2/3) and lens (1/3)</li>
-          </ul>
+         
+              <div class="boxHidden10">
+                    <img src="../images/Vision_Pathways/emmertopia.gif" style="width:380px;height:225px;">
+                  </div>
+            <li style="margin-top:-1%;">
+            If the refractive power of the cornea and lens are perfectly matched to the axial length of the eye, light coming from a distance of 20 feet (6 meters) or more will be focused on the fovea without need for an optical correction or change in the shape of the native lens, a condition called emmetropia    
+            <div class="hoverMe10" style="display: inline">
+                    <a href="#imgModal" data-toggle="modal" data-img-url="../images/Vision_Pathways/emmertopia.gif"></a>
+                    </div>
+        </li>
+
+            <li>
+            Unfortunately, most eyes are not emmetropic, and are said to have a refractive error (ametropia) (See How does it go wrong?)     
+            </li>
+            </ul>
           
          </div>
         </div>
@@ -247,7 +274,7 @@
             </li> 
 
             <div class="boxHidden9">
-                    <img src="../images/Vision_Pathways/cataract.jpg" style="width:380px;height:225px;">
+                    <img src="../images/Vision_Pathways/cataract.jpg" style="width:250px;height:225px;">
                   </div>
 
         <li style="margin-top:-1%;">
@@ -265,7 +292,7 @@
 
         <li>
             <div class="amTRAP">
-                <bold>Trap: </bold>
+                <strong>Trap: </strong>
                 <em>failure of optical segment causes indistinct vision but never causes blank or black areas in panorama of vision (“scotomas”), which always derive from lesions of prechiasmal, chiasmal, or retrochiasmal portions of visual pathway (See <a href="Retrochiasmal_Segment.html">Retinocortical Segment</a>) </em>
             </div>
         </li>

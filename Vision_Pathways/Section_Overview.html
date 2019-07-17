@@ -16,7 +16,7 @@
   <link href="../css/modalMenu.css" rel="stylesheet">
   <link href="../css/navbar.css" rel="stylesheet">
   <link href="../css/amStyling.css" rel="stylesheet">
-  
+ 
   
   
 
@@ -33,12 +33,20 @@
  <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
   <div class="amListingColumns">
       
-      <span style="font-size:50px;cursor:pointer" onclick="openCloseNav()">&#9776; </span>
-    <a id="goBack" href="Occipito_Temporal_Segment.html"><span class="glyphicon glyphicon-chevron-left" style="margin-top:21px;font-size:25px;color:white"></span></a>
-    <a id="goBack" href="Optical_Segments.html"><span class="glyphicon glyphicon-chevron-right" style="margin-top:20.5px;font-size:25px;color:white;"></span></a>
+      <span class="menuSize" style="cursor:pointer;font-size:50px;" onclick="openCloseNav()">&#9776; </span>
+
+      <div class="amTwoArrows">
+          
+    <a id="" href="Occipito_Temporal_Segment.html" style=""><span class="glyphicon glyphicon-chevron-left" style="font-size:30px;color:white;"></span></a>
+    <div></div>
+    <a id="" href="Optical_Segments.html" style=""><span class="glyphicon glyphicon-chevron-right" style="font-size:30px;color:white;"></span></a>
+    
+    
+  </div>
+
+  <div></div>
          
-         
-         <span class="titleStyling scrapeMeTitle" > Vision Pathways </span>
+         <span class="titleStyling scrapeMeTitle" > Vision Pathways </a>
   </div>
  </nav>
     
@@ -53,9 +61,15 @@
       <h1 style="text-align:center;">Vision Pathways Overview</h1>
       <span id="bookmark" class="glyphicon glyphicon-star pull-right"></span>
       <div></div>
-      <div id="wrapper" style="width:100%;"> 
-        <img src="../images/Vision_Pathways/visionPathwaysYellow.PNG" class="img-responsive" width="400" height="325" style="max-width:100%; height:auto;margin-left:auto;margin-right:auto;margin-bottom:5%;">   
-          </div>
+      <div id="wrapper" style="padding-bottom:2%;"> 
+        
+        <li style="list-style-type:none;">
+            <a href="#imgModal" data-toggle="modal" data-img-url="../images/Vision_Pathways/visionPathwaysYellow.PNG">
+              <img src="../images/Vision_Pathways/visionPathwaysYellow.PNG"  class="img-responsive  col-xs-12" style="max-width: 70%;max-height:auto;margin-left:10%;display:absolute;" >   
+            </a>
+      </li>    
+    
+      </div>
         <div></div>
         <div></div>
      <!-- Panel Group with more than one panel allowed to be open at a time -->
@@ -88,7 +102,7 @@
           <img src="../images/Vision_Pathways/threeSegments.gif" style="width:380px;height:225px;">
         </div>
 
-        <li style="margin-top:-1%;">Pathway that conducts visual information from eyes to vision-associated cerebral cortex </li>
+        <li style="margin-top:-1.2%;">Pathway that conducts visual information from eyes to vision-associated cerebral cortex </li>
         <li> 
           
             Three segments: optical, retinocortical, and perceptual 
@@ -127,7 +141,7 @@
           <img src="../images/Vision_Pathways/percep.gif" style="width:380px;height:225px;">
         </div>
 
-      <li style="margin-top:-3%;">
+      <li style="margin-top:-3.6%;">
         
           <strong>
                 Optical Segment:   
