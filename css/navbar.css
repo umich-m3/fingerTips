@@ -56,6 +56,17 @@
     
 }
 
+.amTwoArrowsIndex{
+    display:inline-grid;
+    grid-template-columns:40% 10% 40%;
+    color:white;
+    align-items:center;
+    justify-content: center;
+    grid-column-gap:5%;
+    text-align:center;
+    
+}
+
 .titleStyling{
     text-align:center;
     font-size:22px;
