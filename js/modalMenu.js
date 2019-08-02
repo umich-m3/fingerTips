@@ -186,6 +186,14 @@ function openCloseNav() {
       $(".boxHidden21").css("visibility","hidden")
     });
 
+    $(".hoverMe22").mouseover(function(){
+      $(".boxHidden22").css("visibility","visible")
+    });
+
+    $(".hoverMe22").mouseout(function(){
+      $(".boxHidden22").css("visibility","hidden")
+    });
+
   }
   
  
