@@ -276,3 +276,8 @@
         justify-self:center;
     }
 }
+
+.glyphicon.v-centered {
+    position: inherit;
+    vertical-align: middle;
+}
