@@ -40,7 +40,7 @@
     text-align: center;
     position:relative;
     display:inherit;
-    width:10px;
+    width:50%;
     height:0px;
     bottom:33vh;
     -webkit-transition: .1s ease-in-out;
@@ -54,13 +54,35 @@
    
   }
 
+  .popUpImageStyle{
+    max-width:100%;
+    height:16vw;
+  }
+
+  .popUpSmallerImageStyle{
+    max-width:100%;
+    height:12vw;
+  }
+
+  .popUpExtraSmallerImageStyle{
+    max-width:100%;
+    height:8vw;
+  }
+
+  .popUpBiggerImageStyle{
+    max-width:100%;
+    height:20vw;
+  }
+
+
+
   .boxHidden2 {
     visibility: hidden;
     color: #fff;
     text-align: center;
     position:relative;
     display:inherit;
-    width:10px;
+    width:50%;
     height:0px;
     bottom:33vh;
     -webkit-transition: .1s ease-in-out;
@@ -80,7 +102,7 @@
     text-align: center;
     position:relative;
     display:inherit;
-    width:10px;
+    width:50%;
     height:0px;
     bottom:33vh;
     -webkit-transition: .1s ease-in-out;
@@ -100,7 +122,7 @@
     text-align: center;
     position:relative;
     display:inherit;
-    width:10px;
+    width:50%;
     height:0px;
     bottom:33vh;
     -webkit-transition: .1s ease-in-out;
@@ -120,7 +142,7 @@
     text-align: center;
     position:relative;
     display:inherit;
-    width:10px;
+    width:50%;
     height:0px;
     bottom:33vh;
     -webkit-transition: .1s ease-in-out;
@@ -140,7 +162,7 @@
     text-align: center;
     position:relative;
     display:inherit;
-    width:10px;
+    width:50%;
     height:0px;
     bottom:33vh;
     -webkit-transition: .1s ease-in-out;
@@ -160,7 +182,7 @@
     text-align: center;
     position:relative;
     display:inherit;
-    width:10px;
+    width:50%;
     height:0px;
     bottom:33vh;
     -webkit-transition: .1s ease-in-out;
@@ -180,7 +202,7 @@
     text-align: center;
     position:relative;
     display:inherit;
-    width:10px;
+    width:50%;
     height:0px;
     bottom:33vh;
     -webkit-transition: .1s ease-in-out;
@@ -200,7 +222,7 @@
     text-align: center;
     position:relative;
     display:inherit;
-    width:10px;
+    width:50%;
     height:0px;
     bottom:33vh;
     -webkit-transition: .1s ease-in-out;
@@ -220,7 +242,7 @@
     text-align: center;
     position:relative;
     display:inherit;
-    width:10px;
+    width:50%;
     height:0px;
     bottom:33vh;
     -webkit-transition: .1s ease-in-out;
@@ -240,7 +262,7 @@
     text-align: center;
     position:relative;
     display:inherit;
-    width:10px;
+    width:50%;
     height:0px;
     bottom:33vh;
     -webkit-transition: .1s ease-in-out;
@@ -260,7 +282,7 @@
     text-align: center;
     position:relative;
     display:inherit;
-    width:10px;
+    width:50%;
     height:0px;
     bottom:33vh;
     -webkit-transition: .1s ease-in-out;
@@ -280,7 +302,7 @@
     text-align: center;
     position:relative;
     display:inherit;
-    width:10px;
+    width:50%;
     height:0px;
     bottom:33vh;
     -webkit-transition: .1s ease-in-out;
@@ -300,7 +322,7 @@
     text-align: center;
     position:relative;
     display:inherit;
-    width:10px;
+    width:50%;
     height:0px;
     bottom:33vh;
     -webkit-transition: .1s ease-in-out;
@@ -321,7 +343,7 @@
     text-align: center;
     position:relative;
     display:inherit;
-    width:10px;
+    width:50%;
     height:0px;
     bottom:33vh;
     -webkit-transition: .1s ease-in-out;
@@ -341,7 +363,7 @@
     text-align: center;
     position:relative;
     display:inherit;
-    width:10px;
+    width:50%;
     height:0px;
     bottom:33vh;
     -webkit-transition: .1s ease-in-out;
@@ -361,7 +383,7 @@
     text-align: center;
     position:relative;
     display:inherit;
-    width:10px;
+    width:50%;
     height:0px;
     bottom:33vh;
     -webkit-transition: .1s ease-in-out;
@@ -381,7 +403,7 @@
     text-align: center;
     position:relative;
     display:inherit;
-    width:10px;
+    width:50%;
     height:0px;
     bottom:33vh;
     -webkit-transition: .1s ease-in-out;
@@ -401,7 +423,7 @@
     text-align: center;
     position:relative;
     display:inherit;
-    width:10px;
+    width:50%;
     height:0px;
     bottom:33vh;
     -webkit-transition: .1s ease-in-out;
@@ -421,7 +443,7 @@
     text-align: center;
     position:relative;
     display:inherit;
-    width:10px;
+    width:50%;
     height:0px;
     bottom:33vh;
     -webkit-transition: .1s ease-in-out;
@@ -441,7 +463,7 @@
     text-align: center;
     position:relative;
     display:inherit;
-    width:10px;
+    width:50%;
     height:0px;
     bottom:33vh;
     -webkit-transition: .1s ease-in-out;
@@ -461,7 +483,7 @@
     text-align: center;
     position:relative;
     display:inherit;
-    width:10px;
+    width:50%;
     height:0px;
     bottom:33vh;
     -webkit-transition: .1s ease-in-out;
