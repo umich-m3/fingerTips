@@ -252,4 +252,11 @@ li{
 }
 
 
+.amIndexArrows{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color:white;
+    margin-top:13px;
+    
+   }
 
