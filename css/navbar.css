@@ -87,6 +87,13 @@
    
 }
 
+.smallestTitleStyling{
+    text-align:center;
+    font-size:12px;
+    font-style:helvetica-nue;
+   
+}
+
 .titleCenter{
     text-align:center;
     margin-right:5%;
