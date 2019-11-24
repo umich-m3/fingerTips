@@ -31,14 +31,16 @@ for i in range(len(pageArray)):
     subArray = []
     subIndex = getHtml("../"+pageArray[i])
     getPageLinks(subIndex,subArray)
-    topicArray.append(subArray)
+    #topicArray.append(subArray)
+    path = pageArray[i].split("/")[0]
+    for top in subArray:
+        print("../"+path+"/"+top)
 
 
 objectArray = []
 tagArray = []
 
 temp = getHtml("../Vision_Pathways/Section_Overview.html")
-
 for i in temp.find_all(class_="amBodyColumns"):
         h1 = i.findAll('h1')
         for k in h1:
