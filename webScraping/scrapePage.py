@@ -1,4 +1,5 @@
 from bs4 import BeautifulSoup
+import requests
 
 def getHtml(path):
     rawHtml = open(path).read()
@@ -24,6 +25,8 @@ def getPageLinks(index,pageArray):
 index = getHtml("../index.html")
 pageArray = []
 topicArray = []
+Files = []
+BACK = "../"
 
 getPageLinks(index,pageArray)
 
@@ -34,22 +37,35 @@ for i in range(len(pageArray)):
     #topicArray.append(subArray)
     path = pageArray[i].split("/")[0]
     for top in subArray:
-        print("../"+path+"/"+top)
+        #print("../"+path+"/"+top)
+        Files.append(path+"/"+top)
 
+for f in Files:
+    f = BACK + f
+    page = getHtml(f)
+    section = None
+    title = None
+    body = None
+    try:
+        section = page.find_all('span', class_='scrapeMeTitle')[0].get_text()
+    except:
+        section = ""
+    
+    try:
+        title = page.find_all('h1', class_='titleCenter')[0].get_text()
+    except:
+        title = ""
+    
+   
+    try:
+        body = page.find_all("li")
+    except:
+        body = ""
 
-objectArray = []
-tagArray = []
+    for b in body:
+        print(b.get_text())
+    break
 
-temp = getHtml("../Vision_Pathways/Section_Overview.html")
-for i in temp.find_all(class_="amBodyColumns"):
-        h1 = i.findAll('h1')
-        for k in h1:
-            objectArray.append(k.text)   
-
-for i in temp.find_all(class_="scrapeMeTitle"):
-    objectArray.append(i.text)
-
-#Figure out how to scrape the text and put it into tags
 
 
 
