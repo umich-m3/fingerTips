@@ -1,5 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
+import re
+import json
 
 def getHtml(path):
     rawHtml = open(path).read()
@@ -26,9 +28,18 @@ index = getHtml("../index.html")
 pageArray = []
 topicArray = []
 Files = []
+stopwords = {}
+mapArr = []
 BACK = "../"
 
 getPageLinks(index,pageArray)
+
+
+f = open('stopwords.txt', 'r')
+for word in f:
+    no_linebreak = word[:-1]
+    stopwords[no_linebreak] = 1
+
 
 for i in range(len(pageArray)):
     subArray = []
@@ -62,9 +73,30 @@ for f in Files:
     except:
         body = ""
 
+    goodWords = []
     for b in body:
-        print(b.get_text())
-    break
+        #CLEAN WITH REGEX BEFORE COMPARING WITH DICT
+        line = b.get_text()
+        lineArr = line.split()
+        for word in lineArr: 
+            editedWord = re.sub(r'[^a-zA-Z0-9]+', '', word)
+            editedWord = editedWord.lower()
+            if editedWord not in stopwords:
+                goodWords.append(editedWord)
+    spaceWords = ""
+    for w in goodWords:
+        spaceWords += w
+        spaceWords += ", "
+    Map = {"title": title, "text": section, "tags": spaceWords, "loc": f[3:]}
+    mapArr.append(Map)
+
+#Formatting is good but start new line for every new topic
+#Maybe forego array and manually add that in so space can be added
+print("var tipuesearch = {\"pages\": [")
+for m in mapArr:
+    print(str(m) + ',')
+print("]};")
+
 
 
 
