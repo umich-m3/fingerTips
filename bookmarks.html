@@ -91,8 +91,9 @@
 				var index;
 				var bookmark="<ul>";
 				for	(index = 0; index < bookmarks.length; index++) {
-				bookmark_array = bookmarks[index].split(':');
-				bookmark += "<li><a href='" + bookmark_array[3]+ "'><strong>" + bookmark_array[0]+"</strong><br>"+ "<span class='small'>" + bookmark_array[1]+"</span><span class='pull-right glyphicon glyphicon-chevron-right small'></span></a></li>";
+        bookmark_array = bookmarks[index].split(':');
+        console.log(bookmark_array);
+				bookmark += "<li><a href='" + bookmark_array[4]+ "'><strong>" + bookmark_array[0]+"</strong><br>"+ "<span class='small'>" + bookmark_array[1]+"</span><span class='pull-right glyphicon glyphicon-chevron-right small'></span></a></li>";
 				} 
 				bookmark += "</ul>";
 				}

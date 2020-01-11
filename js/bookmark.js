@@ -1,14 +1,13 @@
 // JavaScript Document
 /*Determine if bookmark is set*/
 		$(function(){	
-			var docTitle = document.title;
-			var parts = docTitle.split(':');
-			var loc = parts.pop();
+			var docTitle = document.getElementsByClassName("titleCenter")[0].textContent;
+			var docSection = document.getElementsByClassName("scrapeMeTitle")[0].textContent;
+			var parts = [docTitle, docSection];
 			var myTitle = parts.join(':');
 			var myURL = document.URL;
 			var bookmark = myTitle+": "+myURL;
 			var bookmarks=[];
-			
 			var storedData = localStorage.getItem("tehibookmarks");
 			if (storedData) {
 				bookmarks = JSON.parse(storedData);
@@ -23,9 +22,9 @@
 
 		$( "#bookmark").click(function(e) {				   
 			$(this).toggleClass( "maize" );
-			 	var docTitle = document.title;
-				var parts = docTitle.split(':');
-				var loc = parts.pop();
+				var docTitle = document.getElementsByClassName("titleCenter")[0].textContent;
+				var docSection = document.getElementsByClassName("scrapeMeTitle")[0].textContent;
+				var parts = [docTitle, docSection];
 				var myTitle = parts.join(':');
 				var myURL = document.URL;
 				var bookmark = myTitle+": "+myURL;
