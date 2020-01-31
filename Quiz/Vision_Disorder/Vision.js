@@ -7,7 +7,6 @@ localStorage.saveResponseVision;
 	var clicked = "co";
 	var answered = 0;
     var retrievedAnsweredPages = localStorage.getItem("Vision");
-    console.log(localStorage.getItem("Vision"));
 	var answeredPages = JSON.parse(retrievedAnsweredPages);
 	var pageInProgress = document.location.href.match(/[^\/]+$/)[0].replace('.html','');
 	var totalItems =  20; //localStorage.totalItems;
@@ -23,7 +22,6 @@ localStorage.saveResponseVision;
 	$("#percentGradereport").text(percentGrade.toFixed());
 	gradeQuiz();
 
-    console.log(retrievedAnsweredPages);
 	$(document).ready(userStatus);
 	
 	function retakeLauncher() {
