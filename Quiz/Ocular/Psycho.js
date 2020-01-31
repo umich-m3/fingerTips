@@ -7,13 +7,15 @@ localStorage.saveResponse;
 	var clicked = "cow";
 	var answered = 0;
 	var retrievedAnsweredPages = localStorage.getItem("saveResponse");
+	console.log(localStorage.getItem("saveResponse"));
 	var answeredPages = JSON.parse(retrievedAnsweredPages);
 	var pageInProgress = document.location.href.match(/[^\/]+$/)[0].replace('.html','');
-	var totalItems =  24; //localStorage.totalItems;
+	var totalItems =  31; //localStorage.totalItems;
 	var currentScreen = parseFloat(pageInProgress); //holds current screen number
 	var percentGrade = (scoreCorrect/totalItems)*100; //calculate user percent score
 	var passing = 80; //What is the passign percentage
 	
+	console.log(retrievedAnsweredPages);
 	// Sets scores to what is in local storage
 	$("#correctScore").text(localStorage.scoreCorrect);
 	$("#incorrectScore").text(localStorage.scoreIncorrect);
