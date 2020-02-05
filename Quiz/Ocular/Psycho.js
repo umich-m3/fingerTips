@@ -2,7 +2,7 @@ localStorage.scoreHi;
 localStorage.saveResponse;
 
 	// in page variables
-	var scoreCorrect = localStorage.scoreCorrect;
+	var scoreCorrect = localStorage.scoreCorrect1;
 	var scoreIncorrect = localStorage.scoreIncorrect;
 	var clicked = "cow";
 	var answered = 0;
@@ -17,7 +17,7 @@ localStorage.saveResponse;
 	
 	console.log(retrievedAnsweredPages);
 	// Sets scores to what is in local storage
-	$("#correctScore").text(localStorage.scoreCorrect);
+	$("#correctScore").text(localStorage.scoreCorrect1);
 	$("#incorrectScore").text(localStorage.scoreIncorrect);
 	$("#status").hide();
 	$(".currentScreen").text(currentScreen);
@@ -29,7 +29,7 @@ localStorage.saveResponse;
 	
 	function retakeLauncher() {
 		// Sets localStorage to zero to restart the quiz
-		localStorage.scoreCorrect = 0;
+		localStorage.scoreCorrect1 = 0;
 		localStorage.scoreIncorrect = 0;
 		localStorage.saveResponse;
 		var answeredPages = []
@@ -61,7 +61,7 @@ localStorage.saveResponse;
 	}
 
 	function updateDispay() {
-			$("#correctScore").text(localStorage.scoreCorrect);
+			$("#correctScore").text(localStorage.scoreCorrect1);
 			$("#incorrectScore").text(localStorage.scoreIncorrect);
 			savePage();
 	}
@@ -74,7 +74,7 @@ localStorage.saveResponse;
 			});
 		} else if (clicked == "1") {
 			scoreCorrect++;
-			localStorage.scoreCorrect = scoreCorrect;
+			localStorage.scoreCorrect1 = scoreCorrect;
 			answered++;
 			percentGrade == ((scoreCorrect/totalItems)*100);
 			updateStatus();

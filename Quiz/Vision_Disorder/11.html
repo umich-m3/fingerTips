@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Fingertips</title>
+<meta name="description" content="The Eyes Have It">
+<meta name="author" content="University of Michigan Medical School Information Services - Instructional Design and Technology Team">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes">
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<script src="../../js/respond.min.js"></script>
+<link rel="stylesheet" href="../../css/custom.css">
+
+
+  <!-- Custom styles for TEHI app -->
+  <link href="../../css/amStyling.css" rel="stylesheet">
+  <link href="../../css/modalMenu.css" rel="stylesheet">
+  <link href="../../css/navbar.css" rel="stylesheet">
+  <link href="../../css/additionalGrids.css" rel="stylesheet">
+
+<!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body >
+<div class="container">
+<!--Nav -->
+<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div class="navbar-brand brandctr">Disorders of Vision</div>
+        <div class="navbar pull-left">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html"><span class="glyphicon glyphicon-home" style="font-size:27px;"></span></a> </li>
+          </ul>
+          </div>
+          <div id="navbar" class="pull-right">
+            <ul class="nav navbar-nav">
+                <li style="margin-left:10%;">
+                    <div class="amIndexArrows">
+                    <a id="" href="10.html" style=""><span class="glyphicon glyphicon-chevron-left" style="font-size:30px;color:white;"></span></a>
+                    <a id="" href="12.html" style=""><span class="glyphicon glyphicon-chevron-right"style="font-size:30px;color:white;"></span></a>
+                  </div>
+                  </li>
+              
+            </ul> 
+          </div>
+          </div><!-- /.navbar-header -->
+      </div><!-- /.container -->
+  </nav><!-- /.navbar -->
+<!--End Nav -->
+  
+<!-- Question Content-->
+<div id="status" class="alert alert-success" role="alert">&nbsp;</div>
+
+<div class="container">
+              <div class="row" id="score_zone">
+                <div class="col-xs-4"><span class="btn">(<span class="currentScreen">&nbsp;</span> of <span class="totalScreens">&nbsp;</span>)</span></div>
+                <div class="col-xs-3"><span class="btn bg-grey">Correct: <span id="correctScore">0</span></span></div>
+                <div class="col-xs-3 col-xs-offset-1"><span class="btn bg-grey">Incorrect: <span id="incorrectScore">0</span></span></div>
+                </div>
+      </div>
+
+
+
+      <h3>A 25 year old woman is found to have these abnormalities on routine optometric examination.  She is without visual symptoms but reports moderate continuous headache for the past six months. She is markedly overweight, but denies any medical problems and takes no medications.  Visual acuities are normal; visual fields show very small nerve fiber bundle defects with mean deviations of -2.00 decibels.  Brain MRI and contrast magnetic resonance venography (MRV) are normal.  Lumbar puncture opening pressure is 30cm water with normal constituents.  She reports unbearable side effects from a 4-week trial of acetazolamide.  Trials of other intracranial pressure-lowering agents have not altered the optic disc appearance, optical coherence tomography results, or visual field measurements over several months.   </h3>
+      
+      <li style="list-style-type:none;margin-bottom:2%;">
+        <a href="#imgModal" data-toggle="modal" data-img-url="../../images/Optic_Nerve_And_Optic_Chiasm_Disorders/newIdiopathicIcon.png">
+     <img src="../../images/Optic_Nerve_And_Optic_Chiasm_Disorders/newIdiopathicIcon.png" style="height:100%; width: 70%;margin-left:auto;margin-right:auto;" class="img-responsive">   
+    </a>
+    </li>
+
+
+<p><a type="button" class="btn btn-success" id="review" href="../../Optic_Nerve_And_Optic_Chiasm_Disorders/Idiopathic_Intracranial_Hypertension.html">Review Topic</a></p>
+<h3>What should you do? </h3>
+<div class="panel-group" id="accordion">
+  <div class="question">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" data-result="0"> A)	Stop all treatment and observe for worsening of markers    </a> </h4>
+      </div>
+      <div id="collapseOne" class="panel-collapse collapse">
+        <div class="panel-body"> <span style="color: green">Correct!</span>
+            The diagnosis is not in doubt here—if all studies were correctly interpreted, she has idiopathic intracranial hypertension (IIH, pseudotumor cerebri).  It has caused only minimal damage to visual function.  Yet the optic discs remain moderately elevated, so the question is whether she is at risk for eventual optic nerve damage if left untreated.  The surgical options entail considerable risks.  Lumbo-peritoneal shunts have given way to ventriculo-peritoneal shunts because of technical problems.  Ventriculo-peritoneal shunts are not difficult to perform, but they have a 20% chance of complications, some serious.  Bariatric surgery might solve the intracranial pressure problem, but has its own adverse consequences.  In the end, “watchful waiting” is probably the most prudent approach here.  One fact favors this approach: if visual function in IIH is to deteriorate, it usually does so early in the course of management.   
+        </div>
+    </div>
+  </div>
+  <div class="question">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" data-result="0"> B)	Perform ventriculo-peritoneal shunt</a> </h4>
+      </div>
+      <div id="collapseTwo" class="panel-collapse collapse">
+        <div class="panel-body"> <span style="color: red">Incorrect</div>
+      </div>
+    </div>
+  </div>
+  <div class="question">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" data-result="0"> C)	Perform lumbo-peritoneal shunt</a> </h4>
+      </div>
+      <div id="collapseThree" class="panel-collapse collapse">
+        <div class="panel-body"> <span style="color: red">Incorrect</div>
+      </div>
+    </div>
+  </div>
+  <div class="question">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" data-result="1"> D)	Recommend bariatric surgery </a> </h4>
+      </div>
+      <div id="collapseFour" class="panel-collapse collapse">
+        
+        <div class="panel-body"> <span style="color: red">Incorrect</div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Question Content-->
+
+<!-- Footer-->
+<div id="imgModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="imgModal" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body">
+      <img width="100%" src="#"/>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+		</div>
+	</div>
+</div>
+<!-- End Footer-->
+<script src="../../js/jquery-2.1.0.min.js"></script> 
+<script src="../../js/bootstrap.min.js"></script>
+<script src="Vision.js"></script>
+
+<!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="../../js/offcanvas.js"></script>
+	<script src="../../js/tehi_modals.js"></script>
+  <script src="../../js/bookmark.js"></script>
+  <script src="../../js/iscroll.js"></script>
+   <script src="../../js/accordion-state.js"></script>
+   <script src="../../js/modalMenu.js"></script>
+
+  <!--Image zoom-->
+  <script>
+    var myScroll;
+    function loaded() {
+    myScroll = new iScroll('wrapper',
+    { zoom:true, zoomMax: 4 });
+    }
+    
+    document.addEventListener('DOMContentLoaded', loaded, false);
+    </script>
+
+ 	<script>loaded();</script> 
+    
+  <!-- Close offcanvas menu when click on a menu link 
+  <script>
+	 $('#sectionmenu a').click(function(e) {
+ 		$('.row-offcanvas').toggleClass('active')
+ 	 });
+ </script>-->
+    
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <!--<script src="../js/ie10-viewport-bug-workaround.js"></script>-->
+</body>
+</html>

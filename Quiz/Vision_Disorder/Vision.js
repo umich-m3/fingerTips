@@ -1,18 +1,21 @@
-localStorage.scoreHi;
+localStorage.scoreHiVision;
 localStorage.saveResponseVision;
 
-    // in page variables
+	// in page variables
 	var scoreCorrect = localStorage.scoreCorrectVision;
 	var scoreIncorrect = localStorage.scoreIncorrectVision;
-	var clicked = "co";
+	var clicked = "cow";
 	var answered = 0;
-    var retrievedAnsweredPages = localStorage.getItem("Vision");
+	var retrievedAnsweredPages = localStorage.getItem("saveResponseVision");
+	//console.log(localStorage.getItem("saveResponseVision"));
 	var answeredPages = JSON.parse(retrievedAnsweredPages);
 	var pageInProgress = document.location.href.match(/[^\/]+$/)[0].replace('.html','');
 	var totalItems =  20; //localStorage.totalItems;
 	var currentScreen = parseFloat(pageInProgress); //holds current screen number
 	var percentGrade = (scoreCorrect/totalItems)*100; //calculate user percent score
 	var passing = 80; //What is the passign percentage
+	
+	console.log(retrievedAnsweredPages);
 	// Sets scores to what is in local storage
 	$("#correctScore").text(localStorage.scoreCorrectVision);
 	$("#incorrectScore").text(localStorage.scoreIncorrectVision);
@@ -30,7 +33,7 @@ localStorage.saveResponseVision;
 		localStorage.scoreIncorrectVision = 0;
 		localStorage.saveResponseVision;
 		var answeredPages = []
-		localStorage.setItem("Vision", JSON.stringify(answeredPages));
+		localStorage.setItem("saveResponseVision", JSON.stringify(answeredPages));
 		document.location.href='1.html';
 	}
 	
@@ -77,7 +80,7 @@ localStorage.saveResponseVision;
 			updateStatus();
 		} else if (clicked == "0") {
 			scoreIncorrect++
-			localStorage.scoreIncorrect = scoreIncorrect;
+			localStorage.scoreIncorrectVision = scoreIncorrect;
 			answered++;
 			percentGrade == ((scoreCorrect/totalItems)*100);
 			updateStatus();
@@ -85,7 +88,7 @@ localStorage.saveResponseVision;
 	}
 
 	function savePage() {
-		localStorage.setItem("Vision", JSON.stringify(answeredPages));
+		localStorage.setItem("saveResponseVision", JSON.stringify(answeredPages));
 	}
 
 	function updateStatus(){
