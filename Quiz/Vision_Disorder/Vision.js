@@ -7,7 +7,7 @@ localStorage.saveResponseVision;
 	var clicked = "cow";
 	var answered = 0;
 	var retrievedAnsweredPages = localStorage.getItem("saveResponseVision");
-	//console.log(localStorage.getItem("saveResponseVision"));
+	console.log(localStorage.getItem("saveResponseVision"));
 	var answeredPages = JSON.parse(retrievedAnsweredPages);
 	var pageInProgress = document.location.href.match(/[^\/]+$/)[0].replace('.html','');
 	var totalItems =  20; //localStorage.totalItems;
@@ -31,7 +31,7 @@ localStorage.saveResponseVision;
 		// Sets localStorage to zero to restart the quiz
 		localStorage.scoreCorrectVision = 0;
 		localStorage.scoreIncorrectVision = 0;
-		localStorage.saveResponseVision;
+		localStorage.saveResponse;
 		var answeredPages = []
 		localStorage.setItem("saveResponseVision", JSON.stringify(answeredPages));
 		document.location.href='1.html';

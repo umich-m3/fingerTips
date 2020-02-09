@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Fingertips</title>
+<meta name="description" content="The Eyes Have It">
+<meta name="author" content="University of Michigan Medical School Information Services - Instructional Design and Technology Team">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes">
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<script src="../../js/respond.min.js"></script>
+<link rel="stylesheet" href="../../css/custom.css">
+
+
+  <!-- Custom styles for TEHI app -->
+  <link href="../../css/amStyling.css" rel="stylesheet">
+  <link href="../../css/modalMenu.css" rel="stylesheet">
+  <link href="../../css/navbar.css" rel="stylesheet">
+  <link href="../../css/additionalGrids.css" rel="stylesheet">
+
+<!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body >
+<div class="container">
+<!--Nav -->
+<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div class="navbar-brand brandctr">Examinations</div>
+        <div class="navbar pull-left">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html"><span class="glyphicon glyphicon-home" style="font-size:27px;"></span></a> </li>
+          </ul>
+          </div>
+          <div id="navbar" class="pull-right">
+            <ul class="nav navbar-nav">
+                <li style="margin-left:10%;">
+                    <div class="amIndexArrows">
+                    <a id="" href="6.html" style=""><span class="glyphicon glyphicon-chevron-left" style="font-size:30px;color:white;"></span></a>
+                    <a id="" href="Results.html" style=""><span class="glyphicon glyphicon-chevron-right"style="font-size:30px;color:white;"></span></a>
+                  </div>
+                  </li>
+              
+            </ul> 
+          </div>
+          </div><!-- /.navbar-header -->
+      </div><!-- /.container -->
+  </nav><!-- /.navbar -->
+<!--End Nav -->
+  
+<!-- Question Content-->
+<div id="status" class="alert alert-success" role="alert">&nbsp;</div>
+
+<div class="container">
+              <div class="row" id="score_zone">
+                <div class="col-xs-4"><span class="btn">(<span class="currentScreen">&nbsp;</span> of <span class="totalScreens">&nbsp;</span>)</span></div>
+                <div class="col-xs-3"><span class="btn bg-grey">Correct: <span id="correctScore">0</span></span></div>
+                <div class="col-xs-3 col-xs-offset-1"><span class="btn bg-grey">Incorrect: <span id="incorrectScore">0</span></span></div>
+                </div>
+      </div>
+
+
+
+      <h3>This 68 year old woman reported difficulty seeing the stairs on descent and in eating her food. Observe the abnormalities in her eye movements.</h3>
+      <video width="100%" height="60%" controls style="">
+        <source src="movie.mp4" type="video/mp4">
+        <source src="../../images/Quiz/video_PSP_revisedAgain.mp4" type="video/ogg">
+      Your browser does not support the video tag.
+      </video>
+
+
+<p><a type="button" class="btn btn-success" id="review" href="../../Examination_Techniques/Eye_Movement_Examination.html">Review Topic</a></p>
+<h3>What assessment provided the critical localizing information? </h3>
+<div class="panel-group" id="accordion">
+  <div class="question">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" data-result="0">A)	Pursuit </a> </h4>
+      </div>
+      <div id="collapseOne" class="panel-collapse collapse">
+        <div class="panel-body"> <span style="color: red">Incorrect</div>
+    </div>
+  </div>
+  <div class="question">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" data-result="0">B)	Saccades</a> </h4>
+      </div>
+      <div id="collapseTwo" class="panel-collapse collapse">
+        <div class="panel-body"> <span style="color: red">Incorrect</div>
+      </div>
+    </div>
+  </div>
+  <div class="question">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" data-result="0">C)	Vestibulo-ocular reflex   </a> </h4>
+      </div>
+      <div id="collapseThree" class="panel-collapse collapse">
+        <div class="panel-body"> <span style="color: green">Correct!</span> 
+            Acknowledged that this patient has impaired volitional gaze--saccades and pursuit--in both the horizontal and vertical planes. Volitional gaze in the vertical plane is virtually absent. Yet passive movement of her head—the doll’s eye or oculocephalic maneuver—which elicits the vestibulo-ocular reflex to move the eyes somewhat in the vertical plane--tells us that the gaze disturbance spares the pathway from the vestibular nerves to their connections with the ocular motor nuclei.  The lesion must therefore lie above these nuclei in the hierarchy of ocular motor control.  Thus, the disturbance is called “supranuclear.”  Other clinical features—reduced spontaneous facial movements and gestures, axial rigidity, and frequent unexplained falls—were also present in this patient, defining a condition known as “progressive supranuclear palsy,” a degenerative disorder for which there is sadly no effective treatment.  Precautions against falling and aspiration must be taken.   
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="question">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" data-result="1">D)	Vergence</a> </h4>
+      </div>
+      <div id="collapseFour" class="panel-collapse collapse">
+        <div class="panel-body"> <span style="color: red">Incorrect</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Question Content-->
+
+<!-- Footer-->
+
+<!-- End Footer-->
+<script src="../../js/jquery-2.1.0.min.js"></script> 
+<script src="../../js/bootstrap.min.js"></script>
+<script src="Eye_Movement.js"></script>
+
+<!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="../../js/offcanvas.js"></script>
+	<script src="../../js/tehi_modals.js"></script>
+  <script src="../../js/bookmark.js"></script>
+  <script src="../../js/iscroll.js"></script>
+   <script src="../../js/accordion-state.js"></script>
+   <script src="../../js/modalMenu.js"></script>
+
+  <!--Image zoom-->
+  <script>
+    var myScroll;
+    function loaded() {
+    myScroll = new iScroll('wrapper',
+    { zoom:true, zoomMax: 4 });
+    }
+    
+    document.addEventListener('DOMContentLoaded', loaded, false);
+    </script>
+
+ 	<script>loaded();</script> 
+    
+  <!-- Close offcanvas menu when click on a menu link 
+  <script>
+	 $('#sectionmenu a').click(function(e) {
+ 		$('.row-offcanvas').toggleClass('active')
+ 	 });
+ </script>-->
+    
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <!--<script src="../js/ie10-viewport-bug-workaround.js"></script>-->
+</body>
+</html>
