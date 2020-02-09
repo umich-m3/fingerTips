@@ -7,16 +7,16 @@
 <meta name="description" content="The Eyes Have It">
 <meta name="author" content="University of Michigan Medical School Information Services - Instructional Design and Technology Team">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes">
-<link rel="stylesheet" href="../../css/bootstrap.min.css">
-<script src="../assets/js/respond.min.js"></script>
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<script src="../../js/respond.min.js"></script>
 <link rel="stylesheet" href="../../css/custom.css">
 
-<link href="../../css/offcanvas.css" rel="stylesheet">
+
   <!-- Custom styles for TEHI app -->
-  <link href="../../css/tehi.css" rel="stylesheet">
   <link href="../../css/amStyling.css" rel="stylesheet">
   <link href="../../css/modalMenu.css" rel="stylesheet">
   <link href="../../css/navbar.css" rel="stylesheet">
+  <link href="../../css/additionalGrids.css" rel="stylesheet">
 
 <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -26,26 +26,29 @@
 <body >
 <div class="container">
 <!--Nav -->
-<nav class="navbar navbar-default navbar-fixed-top text-center" role="navigation">
-
-        <div class="amListingColumns">
-      
-                <span class="menuSize" style="cursor:pointer;font-size:50px;" onclick="openCloseNav()">&#9776; </span>
-          
-                <div class="amTwoArrows">
-              <a id="" href="Prechiasmal.html" style=""><span class="glyphicon glyphicon-chevron-left" style="font-size:30px;color:white;"></span></a>
-              <div></div>
-              <a id="" href="Retrochiasmal_Segment.html" style=""><span class="glyphicon glyphicon-chevron-right" style="font-size:30px;color:white;"></span></a>
-          
-            </div>
-          
-            <div></div>
-
-               <span class="titleStyling scrapeMeTitle" > Eye Movement Disorders </span>
-        </div>
-
-  
-</nav>
+<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div class="navbar-brand brandctr">Examinations</div>
+        <div class="navbar pull-left">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html"><span class="glyphicon glyphicon-home" style="font-size:27px;"></span></a> </li>
+          </ul>
+          </div>
+          <div id="navbar" class="pull-right">
+            <ul class="nav navbar-nav">
+                <li style="margin-left:10%;">
+                    <div class="amIndexArrows">
+                    <a id="" href="" style=""><span class="glyphicon glyphicon-chevron-left" style="font-size:30px;color:white;"></span></a>
+                    <a id="" href="2.html" style=""><span class="glyphicon glyphicon-chevron-right"style="font-size:30px;color:white;"></span></a>
+                  </div>
+                  </li>
+              
+            </ul> 
+          </div>
+          </div><!-- /.navbar-header -->
+      </div><!-- /.container -->
+  </nav><!-- /.navbar -->
 <!--End Nav -->
   
 <!-- Question Content-->
@@ -54,53 +57,66 @@
 <div class="container">
               <div class="row" id="score_zone">
                 <div class="col-xs-4"><span class="btn">(<span class="currentScreen">&nbsp;</span> of <span class="totalScreens">&nbsp;</span>)</span></div>
-                <div class="col-xs-3"><span class="btn bg-grey">Correct: <span id="correctScore">0</span></span></div>
-                <div class="col-xs-3 col-xs-offset-1"><span class="btn bg-grey">Incorrect: <span id="incorrectScore">0</span></span></div>
+                <div class="col-xs-3"><span class="btn bg-grey">Correct: <span id="correctScore"></span></span></div>
+                <div class="col-xs-3 col-xs-offset-1"><span class="btn bg-grey">Incorrect: <span id="incorrectScore"></span></span></div>
                 </div>
       </div>
 
 
-<h3>question</h3>
-<p><img src="../../xxxxx" class="img-responsive" /></p>
-<p><a type="button" class="btn btn-success" id="review" href="../../xxxxx">Review Topic</a></p>
+
+      <h3>A 70 year old woman reports that she sees what you see here.  When she closes either eye, the second image disappears.  Eye movements are full without nystagmus.  Examination with the cover test shows that her eyes appear to be aligned.  A second examiner finds that there is a comitant esodeviation.</h3>
+      
+      <li style="list-style-type:none;margin-bottom:2%;">
+        <a href="#imgModal" data-toggle="modal" data-img-url="../../images/Diplopia/Diplopia.png">
+     <img src="../../images/Diplopia/Diplopia.png" style="height:100%; width: 70%;margin-left:auto;margin-right:auto;" class="img-responsive">   
+    </a>
+    </li>
+
+
+<p><a type="button" class="btn btn-success" id="review" href="../../Examination_Techniques/Eye_Alignment_Examination.html">Review Topic</a></p>
+<h3>Why was there a difference in the results of the two examinations? </h3>
 <div class="panel-group" id="accordion">
   <div class="question">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" data-result="1"> A. response </a> </h4>
+        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" data-result="0"> A)	The first examiner is correct; the second examiner was fooled by poor patient fixation </a> </h4>
       </div>
       <div id="collapseOne" class="panel-collapse collapse">
-        <div class="panel-body">Yes.</div>
-      </div>
+        <div class="panel-body"> <span style="color: green">Correct!</span>
+            
+        </div>
     </div>
   </div>
   <div class="question">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" data-result="0"> B. response </a> </h4>
+        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" data-result="0">B)	The first examiner is correct; the second examiner’s finding is an esophoria, not an esotropia  </a> </h4>
       </div>
       <div id="collapseTwo" class="panel-collapse collapse">
-        <div class="panel-body"> <span style="color: red">Incorrect.</span>  It's <i>feedbackWrong</i>. </div>
+        <div class="panel-body"> <span style="color: red">Incorrect</div>
       </div>
     </div>
   </div>
   <div class="question">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" data-result="0"> C. response </a> </h4>
+        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" data-result="0"> C)	The second examiner is correct; the first examiner failed to instruct the patient to fixate  </a> </h4>
       </div>
       <div id="collapseThree" class="panel-collapse collapse">
-        <div class="panel-body"> <span style="color: red">Incorrect.</span>  It's <i>feedbackWrong</i>. </div>
+        <div class="panel-body"> <span style="color: green">Correct!</span>
+          The most common failure in technique during the cover test is to instruct the patient to make the viewed target “come into focus.”  If the patient does not understand to do this, he or she will fail to execute a refixational movement to place the viewed target on the fovea.  In that circumstance, ocular misalignment in any plane will be overlooked.  The single Maddox rod test might reveal the ocular misalignment. 
+        </div>
       </div>
     </div>
   </div>
   <div class="question">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" data-result="0"> D. response </a> </h4>
+        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" data-result="1"> D)	The second examiner is correct; the first examiner failed to properly cover the eye</a> </h4>
       </div>
       <div id="collapseFour" class="panel-collapse collapse">
-        <div class="panel-body"> <span style="color: red">Incorrect.</span>  It's <i>feedbackWrong</i>. </div>
+        <div class="panel-body"> <span style="color: red">Incorrect</div> 
+        </div>
       </div>
     </div>
   </div>
@@ -108,7 +124,18 @@
 <!-- End Question Content-->
 
 <!-- Footer-->
-
+<div id="imgModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="imgModal" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body">
+      <img width="100%" src="#"/>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+		</div>
+	</div>
+</div>
 <!-- End Footer-->
 <script src="../../js/jquery-2.1.0.min.js"></script> 
 <script src="../../js/bootstrap.min.js"></script>

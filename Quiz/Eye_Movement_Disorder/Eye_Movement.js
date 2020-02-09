@@ -1,22 +1,24 @@
-// localStorage.scoreHi;
-localStorage.saveResponse;
+localStorage.scoreHiEye;
+localStorage.saveResponseEye;
 
 	// in page variables
-	var scoreCorrect = localStorage.scoreCorrect;
-	var scoreIncorrect = localStorage.scoreIncorrect;
+	var scoreCorrect = localStorage.scoreCorrectEye;
+	var scoreIncorrect = localStorage.scoreIncorrectEye;
 	var clicked = "cow";
 	var answered = 0;
-	var retrievedAnsweredPages = localStorage.getItem("saveResponse");
+	var retrievedAnsweredPages = localStorage.getItem("saveResponseEye");
+	//console.log(localStorage.getItem("saveResponseVision"));
 	var answeredPages = JSON.parse(retrievedAnsweredPages);
 	var pageInProgress = document.location.href.match(/[^\/]+$/)[0].replace('.html','');
-	var totalItems =  24; //localStorage.totalItems;
+	var totalItems =  20; //localStorage.totalItems;
 	var currentScreen = parseFloat(pageInProgress); //holds current screen number
 	var percentGrade = (scoreCorrect/totalItems)*100; //calculate user percent score
 	var passing = 80; //What is the passign percentage
 	
+	console.log(retrievedAnsweredPages);
 	// Sets scores to what is in local storage
-	$("#correctScore").text(localStorage.scoreCorrect);
-	$("#incorrectScore").text(localStorage.scoreIncorrect);
+	$("#correctScore").text(localStorage.scoreCorrectEye);
+	$("#incorrectScore").text(localStorage.scoreIncorrectEye);
 	$("#status").hide();
 	$(".currentScreen").text(currentScreen);
 	$(".totalScreens").text(totalItems);
@@ -27,12 +29,12 @@ localStorage.saveResponse;
 	
 	function retakeLauncher() {
 		// Sets localStorage to zero to restart the quiz
-		localStorage.scoreCorrect = 0;
-		localStorage.scoreIncorrect = 0;
-		localStorage.saveResponse;
+		localStorage.scoreCorrectEye = 0;
+		localStorage.scoreIncorrectEye = 0;
+		localStorage.saveResponseEye;
 		var answeredPages = []
-		localStorage.setItem("saveResponse", JSON.stringify(answeredPages));
-		document.location.href='0.html';
+		localStorage.setItem("saveResponseEye", JSON.stringify(answeredPages));
+		document.location.href='1.html';
 	}
 	
 	//evaluates the user score for passing
@@ -59,8 +61,8 @@ localStorage.saveResponse;
 	}
 
 	function updateDispay() {
-			$("#correctScore").text(localStorage.scoreCorrect);
-			$("#incorrectScore").text(localStorage.scoreIncorrect);
+			$("#correctScore").text(localStorage.scoreCorrectVision);
+			$("#incorrectScore").text(localStorage.scoreIncorrectVision);
 			savePage();
 	}
 
@@ -72,13 +74,13 @@ localStorage.saveResponse;
 			});
 		} else if (clicked == "1") {
 			scoreCorrect++;
-			localStorage.scoreCorrect = scoreCorrect;
+			localStorage.scoreCorrectEye = scoreCorrect;
 			answered++;
 			percentGrade == ((scoreCorrect/totalItems)*100);
 			updateStatus();
 		} else if (clicked == "0") {
 			scoreIncorrect++
-			localStorage.scoreIncorrect = scoreIncorrect;
+			localStorage.scoreIncorrectEye = scoreIncorrect;
 			answered++;
 			percentGrade == ((scoreCorrect/totalItems)*100);
 			updateStatus();
@@ -86,7 +88,7 @@ localStorage.saveResponse;
 	}
 
 	function savePage() {
-		localStorage.setItem("saveResponse", JSON.stringify(answeredPages));
+		localStorage.setItem("saveResponseEye", JSON.stringify(answeredPages));
 	}
 
 	function updateStatus(){

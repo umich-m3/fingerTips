@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Fingertips</title>
+<meta name="description" content="The Eyes Have It">
+<meta name="author" content="University of Michigan Medical School Information Services - Instructional Design and Technology Team">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes">
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<script src="../../js/respond.min.js"></script>
+<link rel="stylesheet" href="../../css/custom.css">
+
+
+  <!-- Custom styles for TEHI app -->
+  <link href="../../css/amStyling.css" rel="stylesheet">
+  <link href="../../css/modalMenu.css" rel="stylesheet">
+  <link href="../../css/navbar.css" rel="stylesheet">
+  <link href="../../css/additionalGrids.css" rel="stylesheet">
+
+<!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body >
+<div class="container">
+<!--Nav -->
+<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div class="navbar-brand brandctr">Disorders of Vision</div>
+        <div class="navbar pull-left">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html"><span class="glyphicon glyphicon-home" style="font-size:27px;"></span></a> </li>
+          </ul>
+          </div>
+          <div id="navbar" class="pull-right">
+            <ul class="nav navbar-nav">
+                <li style="margin-left:10%;">
+                    <div class="amIndexArrows">
+                    <a id="" href="16.html" style=""><span class="glyphicon glyphicon-chevron-left" style="font-size:30px;color:white;"></span></a>
+                    <a id="" href="18.html" style=""><span class="glyphicon glyphicon-chevron-right"style="font-size:30px;color:white;"></span></a>
+                  </div>
+                  </li>
+              
+            </ul> 
+          </div>
+          </div><!-- /.navbar-header -->
+      </div><!-- /.container -->
+  </nav><!-- /.navbar -->
+<!--End Nav -->
+  
+<!-- Question Content-->
+<div id="status" class="alert alert-success" role="alert">&nbsp;</div>
+
+<div class="container">
+              <div class="row" id="score_zone">
+                <div class="col-xs-4"><span class="btn">(<span class="currentScreen">&nbsp;</span> of <span class="totalScreens">&nbsp;</span>)</span></div>
+                <div class="col-xs-3"><span class="btn bg-grey">Correct: <span id="correctScore">0</span></span></div>
+                <div class="col-xs-3 col-xs-offset-1"><span class="btn bg-grey">Incorrect: <span id="incorrectScore">0</span></span></div>
+                </div>
+      </div>
+
+
+      <h3>A 65 year old man is found on routine optometric examination to have reduced visual acuity in the right eye and a temporal hemianopic defect in the left eye on formal visual field examination.  There is a left afferent pupil defect and the left optic disc is pale.  Otherwise the optometric examination is normal.  A heavy smoker, he is being treated for systemic hypertension.   Imaging shows this aneurysm.</h3>
+      
+      <li style="list-style-type:none;margin-bottom:2%;">
+        <a href="#imgModal" data-toggle="modal" data-img-url="../../images/Optic_Nerve_And_Optic_Chiasm_Disorders/Aneurysm_angio.png">
+     <img src="../../images/Optic_Nerve_And_Optic_Chiasm_Disorders/Aneurysm_angio.png" style="height:100%; width: 70%;margin-left:auto;margin-right:auto;" class="img-responsive">   
+    </a>
+    </li>
+
+
+<p><a type="button" class="btn btn-success" id="review" href="../../Optic_Nerve_And_Optic_Chiasm_Disorders/Carotid_Anerysum.html">Review Topic</a></p>
+<h3>If untreated, what chance is there that the aneurysm will rupture?</h3>
+<div class="panel-group" id="accordion">
+  <div class="question">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" data-result="0">A)	1% per year</a> </h4>
+      </div>
+      <div id="collapseOne" class="panel-collapse collapse">
+        <div class="panel-body"> <span style="color: red">Incorrect</div>
+    </div>
+  </div>
+  <div class="question">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" data-result="0"> B)	2% per year</a> </h4>
+      </div>
+      <div id="collapseTwo" class="panel-collapse collapse">
+        <div class="panel-body"> <span style="color: red">Incorrect</div>
+      </div>
+    </div>
+  </div>
+  <div class="question">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" data-result="0"> C)	4% per year</a> </h4>
+      </div>
+      <div id="collapseThree" class="panel-collapse collapse">
+        <div class="panel-body"> <span style="color: red">Incorrect</div>
+      </div>
+    </div>
+  </div>
+  <div class="question">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" data-result="1"> D)	8% per year   </a> </h4>
+      </div>
+      <div id="collapseFour" class="panel-collapse collapse">
+        <div class="panel-body"> <span style="color: green">Correct!</span>
+            The pattern of vision loss described here—reduced visual acuity and afferent pupil defect in one eye and a temporal hemianopic visual field defect in the other eye—localizes to the optic nerve-optic chiasm junction.  Mass lesions are usually responsible.  The most common ones are pituitary adenomas, meningiomas, craniopharyngiomas, and pilocytic astrocytomas, but aneurysms are not far behind.  This patient has a giant (> 25 mm diameter) aneurysm of the supraclinoid internal carotid artery.  Studies have established an 8% per year rupture rate, with a 50% mortality rate.  Fortunately, aneurysms can be prevented from rupturing by clipping them at their necks, placing coils within them that promote clotting, and by diverting arterial blood flow with stents.  Admittedly, such an intervention carries risks of stroke and intra-procedural aneurysm rupture.  But some type of aneurysm repair would take place unless the patient were too sick to be a candidate.  Of all the possible causes of this pattern of vision loss, aneurysm is the most feared, because of the threat of rupture and instant death.  For that reason, patients with these presenting visual features must undergo relatively prompt retrobulbar imaging, including sequences that adequately visualize blood vessels. 
+        </div>
+          
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Question Content-->
+
+<!-- Footer-->
+<div id="imgModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="imgModal" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body">
+      <img width="100%" src="#"/>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+		</div>
+	</div>
+</div>
+<!-- End Footer-->
+<script src="../../js/jquery-2.1.0.min.js"></script> 
+<script src="../../js/bootstrap.min.js"></script>
+<script src="Vision.js"></script>
+
+<!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="../../js/offcanvas.js"></script>
+	<script src="../../js/tehi_modals.js"></script>
+  <script src="../../js/bookmark.js"></script>
+  <script src="../../js/iscroll.js"></script>
+   <script src="../../js/accordion-state.js"></script>
+   <script src="../../js/modalMenu.js"></script>
+
+  <!--Image zoom-->
+  <script>
+    var myScroll;
+    function loaded() {
+    myScroll = new iScroll('wrapper',
+    { zoom:true, zoomMax: 4 });
+    }
+    
+    document.addEventListener('DOMContentLoaded', loaded, false);
+    </script>
+
+ 	<script>loaded();</script> 
+    
+  <!-- Close offcanvas menu when click on a menu link 
+  <script>
+	 $('#sectionmenu a').click(function(e) {
+ 		$('.row-offcanvas').toggleClass('active')
+ 	 });
+ </script>-->
+    
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <!--<script src="../js/ie10-viewport-bug-workaround.js"></script>-->
+</body>
+</html>
