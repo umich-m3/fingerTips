@@ -1,10 +1,10 @@
-//localStorage.scoreHiVision;
+localStorage.scoreHiEye;
 localStorage.saveResponseEye;
 
 	// in page variables
 	var scoreCorrect = localStorage.scoreCorrectEye;
 	var scoreIncorrect = localStorage.scoreIncorrectEye;
-	var clicked = "cow";
+	var clicked = "co";
 	var answered = 0;
 	var retrievedAnsweredPages = localStorage.getItem("saveResponseEye");
 	//console.log(localStorage.getItem("saveResponseVision"));
@@ -74,12 +74,14 @@ localStorage.saveResponseEye;
 			});
 		} else if (clicked == "1") {
 			scoreCorrect++;
+			//alert("Correct");
 			localStorage.scoreCorrectEye = scoreCorrect;
 			answered++;
 			percentGrade == ((scoreCorrect/totalItems)*100);
 			updateStatus();
 		} else if (clicked == "0") {
 			scoreIncorrect++
+			//alert("Incorrect");
 			localStorage.scoreIncorrectEye = scoreIncorrect;
 			answered++;
 			percentGrade == ((scoreCorrect/totalItems)*100);

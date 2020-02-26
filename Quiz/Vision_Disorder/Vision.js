@@ -4,7 +4,7 @@ localStorage.saveResponseVision;
 	// in page variables
 	var scoreCorrect = localStorage.scoreCorrectVision;
 	var scoreIncorrect = localStorage.scoreIncorrectVision;
-	var clicked = "cow";
+	var clicked = "c";
 	var answered = 0;
 	var retrievedAnsweredPages = localStorage.getItem("saveResponseVision");
 	console.log(localStorage.getItem("saveResponseVision"));
@@ -31,7 +31,7 @@ localStorage.saveResponseVision;
 		// Sets localStorage to zero to restart the quiz
 		localStorage.scoreCorrectVision = 0;
 		localStorage.scoreIncorrectVision = 0;
-		localStorage.saveResponse;
+		localStorage.saveResponseVision;
 		var answeredPages = []
 		localStorage.setItem("saveResponseVision", JSON.stringify(answeredPages));
 		document.location.href='1.html';
@@ -100,7 +100,7 @@ localStorage.saveResponseVision;
 	//Triggers scoring of a users response
 	$( "#accordion a" ).on( "click", function() {
 	    clicked = $(this).attr('data-result');
-		//alert("click");
+		//alert(clicked);
 		scoreUpdate();	
 	});
 	
