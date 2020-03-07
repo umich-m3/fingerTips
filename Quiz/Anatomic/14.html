@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Fingertips</title>
+<meta name="description" content="The Eyes Have It">
+<meta name="author" content="University of Michigan Medical School Information Services - Instructional Design and Technology Team">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes">
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<script src="../../js/respond.min.js"></script>
+<link rel="stylesheet" href="../../css/custom.css">
+
+
+  <!-- Custom styles for TEHI app -->
+  <link href="../../css/amStyling.css" rel="stylesheet">
+  <link href="../../css/modalMenu.css" rel="stylesheet">
+  <link href="../../css/navbar.css" rel="stylesheet">
+  <link href="../../css/additionalGrids.css" rel="stylesheet">
+
+<!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body >
+<div class="container">
+<!--Nav -->
+<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div class="navbar-brand brandctr">Anatomic Pathways</div>
+        <div class="navbar pull-left">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html"><span class="glyphicon glyphicon-home" style="font-size:27px;"></span></a> </li>
+          </ul>
+          </div>
+          <div id="navbar" class="pull-right">
+            <ul class="nav navbar-nav">
+                <li style="margin-left:10%;">
+                    <div class="amIndexArrows">
+                    <a id="" href="13.html" style=""><span class="glyphicon glyphicon-chevron-left" style="font-size:30px;color:white;"></span></a>
+                    <a id="" href="15.html" style=""><span class="glyphicon glyphicon-chevron-right"style="font-size:30px;color:white;"></span></a>
+                  </div>
+                  </li>
+              
+            </ul> 
+          </div>
+          </div><!-- /.navbar-header -->
+      </div><!-- /.container -->
+  </nav><!-- /.navbar -->
+<!--End Nav -->
+  
+<!-- Question Content-->
+<div id="status" class="alert alert-success" role="alert">&nbsp;</div>
+
+<div class="container">
+              <div class="row" id="score_zone">
+                <div class="col-xs-4"><span class="btn">(<span class="currentScreen">&nbsp;</span> of <span class="totalScreens">&nbsp;</span>)</span></div>
+                <div class="col-xs-3"><span class="btn bg-grey">Correct: <span id="correctScore">0</span></span></div>
+                <div class="col-xs-3 col-xs-offset-1"><span class="btn bg-grey">Incorrect: <span id="incorrectScore">0</span></span></div>
+                </div>
+      </div>
+
+
+
+      <h4 style="font-weight:bold;">A 65 year old man has recently been diagnosed with a brain tumor.  He is referred to see if there are any neuro-ophthalmic features that might be associated with that diagnosis.  You find that as he follows you moving finger and penlight toward his right side, his eyes move in small steps.  In all other directions of gaze, the eyes move smoothly.  The opkinetic drum elicits normal-amplitude nystagmus when the stripes are moved horizontally to the patient’s left, upward, and downward.  But when the stripes are moved in the direction of the patient’s right side, no nystagmus occurs.  </h4>
+    <li style="list-style-type:none;margin-bottom:2%;">
+      <a href="#imgModal" data-toggle="modal" data-img-url="../../images/Supranuclear_Ocular_Motor_Pathways/pursuitGreen.PNG">
+   <img src="../../images/Supranuclear_Ocular_Motor_Pathways/pursuitGreen.PNG" style="height:100%; width: 70%;margin-left:auto;margin-right:auto;" class="img-responsive">   
+  </a>
+  </li>
+
+
+<p><a type="button" class="btn btn-success" id="review" href="../../Supranuclear_Ocular_Motor_Pathways/Pursuit_Pathway.html">Review Topic</a></p>
+<h4 style="font-weight:bold;">Where is the brain lesion?</h4>
+<div class="panel-group" id="accordion">
+  <div class="question">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" data-result="1">A)	Right parietal lobe   </a> </h4>
+      </div>
+      <div id="collapseOne" class="panel-collapse collapse">
+        <div class="panel-body"> <span style="color: green">Correct!</span> 
+            In order to get the correct answer here, you must be aware that pursuit is mediated by a pathway that starts in the parietal lobe and generates pursuit eye movements ipsilaterally.  When you move the optokinetic drum, you generate an obligatory pursuit movement in the direction of the moving stripes (the patient must be paying attention!).  Each pursuit movement is met by an oppositely-directed conjugate saccadic movement that restores the eye position to straight ahead.  Thus, the use of this device is an excellent way to generate repetitive jerk nystagmus that you can analyze for amplitude.  If you consistently see a discrepancy in amplitude between rightwardly and leftwardly directed stripes, you must conclude that there is a unilateral pursuit deficit in the parietal lobe on the side of the deficient optokinetic nystagmus.  By the way, the patient will not notice this pursuit deficit.  
+           
+        </div>
+    </div>
+  </div>
+  <div class="question">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" data-result="0">B)	Left parietal lobe</a> </h4>
+      </div>
+      <div id="collapseTwo" class="panel-collapse collapse">
+        <div class="panel-body"> <span style="color: red">Incorrect</div>
+      </div>
+    </div>
+  </div>
+  <div class="question">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" data-result="0">C)	Right occipital lobe </a> </h4>
+      </div>
+      <div id="collapseThree" class="panel-collapse collapse">
+        <div class="panel-body"> <span style="color: red">Incorrect</div>
+      </div>
+    </div>
+  </div>
+  <div class="question">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" data-result="0">D)	Left occipital lobe</a> </h4>
+      </div>
+      <div id="collapseFour" class="panel-collapse collapse">
+        <div class="panel-body"> <span style="color: red">Incorrect</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Question Content-->
+
+<!-- Footer-->
+
+<div id="imgModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="imgModal" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body">
+      <img width="100%" src="#"/>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+		</div>
+	</div>
+</div>
+
+<!-- Video Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+ <div class="modal-dialog">
+  <div class="modal-content">
+   <div class="modal-body">
+    <div class="embed-responsive embed-responsive-4by3">
+     <iframe class="embed-responsive-item" src=""></iframe>
+    </div>
+   </div>
+   <div class="modal-footer">
+     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+   </div>
+  </div>
+ </div>
+</div>
+<!-- End Footer-->
+<script src="../../js/jquery-2.1.0.min.js"></script> 
+<script src="../../js/bootstrap.min.js"></script>
+<script src="Nero_Opthalmic.js"></script>
+
+<!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="../../js/offcanvas.js"></script>
+	<script src="../../js/tehi_modals.js"></script>
+  <script src="../../js/bookmark.js"></script>
+  <script src="../../js/iscroll.js"></script>
+   <script src="../../js/accordion-state.js"></script>
+   <script src="../../js/modalMenu.js"></script>
+
+  <!--Image zoom-->
+  <script>
+    var myScroll;
+    function loaded() {
+    myScroll = new iScroll('wrapper',
+    { zoom:true, zoomMax: 4 });
+    }
+    
+    document.addEventListener('DOMContentLoaded', loaded, false);
+    </script>
+
+ 	<script>loaded();</script> 
+    
+  <!-- Close offcanvas menu when click on a menu link 
+  <script>
+	 $('#sectionmenu a').click(function(e) {
+ 		$('.row-offcanvas').toggleClass('active')
+ 	 });
+ </script>-->
+    
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <!--<script src="../js/ie10-viewport-bug-workaround.js"></script>-->
+</body>
+</html>

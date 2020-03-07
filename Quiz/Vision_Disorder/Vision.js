@@ -10,7 +10,7 @@ localStorage.saveResponseVision;
 	console.log(localStorage.getItem("saveResponseVision"));
 	var answeredPages = JSON.parse(retrievedAnsweredPages);
 	var pageInProgress = document.location.href.match(/[^\/]+$/)[0].replace('.html','');
-	var totalItems =  20; //localStorage.totalItems;
+	var totalItems =  21; //localStorage.totalItems;
 	var currentScreen = parseFloat(pageInProgress); //holds current screen number
 	var percentGrade = (scoreCorrect/totalItems)*100; //calculate user percent score
 	var passing = 80; //What is the passign percentage
