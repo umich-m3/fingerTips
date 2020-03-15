@@ -1,3 +1,14 @@
+#quizHeader{
+    text-align:center;
+    background:white;
+    margin-bottom:1vh;
+}
+
+#quizHeaderGrid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
 .amOneIndent{
     font-size: 16px;
 }
