@@ -26,6 +26,16 @@ localStorage.saveResponseEye;
 	gradeQuiz();
 
 	$(document).ready(userStatus);
+
+	if (!window.sessionStorage.getItem("isExecutedEye")) {
+		localStorage.scoreCorrectEye = 0;
+		localStorage.scoreIncorrectEye = 0;
+		localStorage.saveResponseEye;
+		var answeredPages = []
+		localStorage.setItem("saveResponseEye", JSON.stringify(answeredPages));
+		window.sessionStorage.setItem("isExecutedEye", true);
+	}
+
 	
 	function retakeLauncher() {
 		// Sets localStorage to zero to restart the quiz

@@ -118,7 +118,7 @@
         <div class="panel-body"> <span style="color: green">Correct!</span>  
 
           <div class="boxHidden">
-                <img src="../../images/Quiz/Graves_EOMs_CT_axial.jpg" class="popUpSmallerImageStyle" style="margin-right:1%;margin-top:30vh;">
+                <img src="../../images/Quiz/Graves_EOMs_CT_axial.jpg" class="popUpExtraSmallerImageStyle" style="margin-right:1%;margin-top:30vh;">
               </div>
             
           There are four principal abnormalities here: conjunctival hyperemia, accentuated over the extraocular muscle insertions on the sclera, a supraduction deficit in the right eye, lid retraction, and lid lag. The supraduction deficit derives either from weakness of the superior rectus muscle or tightness of the inferior rectus muscle.  A good view of the orbit and especially of the extraocular muscles--not usually possible with standard brain imaging protocols (either MRI or CT)--would help.  In this case, it showed enlarged extraocular muscles in both orbits.
@@ -145,20 +145,34 @@
 <script src="Psycho.js"></script>
 
 
+<div id="imgModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="imgModal" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body">
+      <img width="100%" src="#"/>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+		</div>
+	</div>
+</div>
+
+<!-- Video Modal -->
 <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
-        <div class="modal-dialog">
-         <div class="modal-content">
-          <div class="modal-body">
-           <div class="embed-responsive embed-responsive-4by3">
-            <iframe class="embed-responsive-item" src=""></iframe>
-           </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
-          </div>
-         </div>
-        </div>
-       </div>
+ <div class="modal-dialog">
+  <div class="modal-content">
+   <div class="modal-body">
+    <div class="embed-responsive embed-responsive-4by3">
+     <iframe class="embed-responsive-item" src=""></iframe>
+    </div>
+   </div>
+   <div class="modal-footer">
+     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+   </div>
+  </div>
+ </div>
+</div>
 
 <!-- Bootstrap core JavaScript
   ================================================== -->
