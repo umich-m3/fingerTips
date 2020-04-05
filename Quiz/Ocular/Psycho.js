@@ -32,6 +32,7 @@ localStorage.saveResponse;
 		var answeredPages = []
 		localStorage.setItem("saveResponse", JSON.stringify(answeredPages));
 		window.sessionStorage.setItem("isExecuted", true);
+		
 	}
 
 	$(document).ready(userStatus);

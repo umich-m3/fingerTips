@@ -34,6 +34,7 @@ localStorage.saveResponseEye;
 		var answeredPages = []
 		localStorage.setItem("saveResponseEye", JSON.stringify(answeredPages));
 		window.sessionStorage.setItem("isExecutedEye", true);
+		
 	}
 
 	
@@ -45,6 +46,7 @@ localStorage.saveResponseEye;
 		var answeredPages = []
 		localStorage.setItem("saveResponseEye", JSON.stringify(answeredPages));
 		document.location.href='1.html';
+		
 	}
 	
 	//evaluates the user score for passing
