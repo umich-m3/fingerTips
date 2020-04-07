@@ -1,0 +1,89 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+
+
+.headerDiv{
+    width:100vw;
+    height:45vh;
+    margin-left:auto;
+    margin-right:auto;
+    display: block;
+}
+
+.waysToUseDiv{
+    width:100vw;
+    height:25vh;
+    margin-left:auto;
+    margin-right:auto;
+    background:#00274C;
+    display:grid;
+    grid-template-columns: 10% 16% 16% 16% 16% 16% 10%;
+    color:white;
+    align-items:center;
+}
+
+.imageTextDiv{
+    display:grid;
+    grid-template-rows: 20% 20% 30% 20% 20%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.firstTextDiv{
+    display:grid;
+    grid-template-rows:30%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.gridImage{
+    width:50%;
+}
+
+.waysGridImage{
+    width:65%;
+}
+
+.aHrefStyle{
+    text-decoration:none;
+    color:white;
+}
+
+.waysTitleDiv{
+    margin-left:5%;
+    margin-right:auto;
+    width:100vw;
+    height:25vh;
+}
+.maizeTitle{
+    color:#FFCB05
+}
+
+.creditsDiv{
+    width:100vw;
+    height:15vh;
+    margin-left:auto;
+    margin-right:auto;
+    background:#00274C;
+}
+
+.waysToUseList{
+    color:#00274C;
+    font-size:2.5vh;
+}
+
+.creditsText{
+    margin-left:5%;
+    color:white;
+}
+
+.liNoBreak{
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
