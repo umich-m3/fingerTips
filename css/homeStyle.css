@@ -12,7 +12,7 @@ html,body
 
 .headerDiv{
     width:100vw;
-    height:45vh;
+    height:55vh;
     margin-left:auto;
     margin-right:auto;
     display: block;
@@ -25,7 +25,7 @@ html,body
     margin-right:auto;
     background:#00274C;
     display:grid;
-    grid-template-columns: 10% 16% 16% 16% 16% 16% 10%;
+    grid-template-columns: 10% 20% 20% 20% 20% 10%;
     color:white;
     align-items:center;
 }
@@ -33,6 +33,7 @@ html,body
 .imageTextDiv{
     display:grid;
     grid-template-rows: 20% 20% 30% 20% 20%;
+    grid-row-gap: 1%;
     margin-left:auto;
     margin-right:auto;
 }
@@ -112,14 +113,16 @@ html,body
 
     .waysTitleDiv{font-size:28px;}
 
-    .gridImage{width:60%;}
+    .gridImage{width:65%;}
     .quizStyle{margin-left:12.5%;}
+    .aHrefStyle{font-size:24px;}
 }
 
 @media(min-width:2421px){
     .creditsDiv{
         font-size:30px;
     }
+    .gridImage{width:75%;}
 
     .waysToUseList{font-size:32px;}
 
