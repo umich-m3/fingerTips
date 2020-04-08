@@ -20,7 +20,7 @@ html,body
 
 .waysToUseDiv{
     width:100vw;
-    height:25vh;
+    height:30vh;
     margin-left:auto;
     margin-right:auto;
     background:#00274C;
@@ -34,6 +34,7 @@ html,body
     display:grid;
     grid-template-rows: 20% 20% 30% 20% 20%;
     grid-row-gap: 1%;
+    margin-bottom:5%;
     margin-left:auto;
     margin-right:auto;
 }
