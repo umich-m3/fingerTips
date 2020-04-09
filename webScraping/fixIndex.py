@@ -56,13 +56,16 @@ for f in Files:
     else:
         homeIcon = page.findAll("a", {"class": "glyphicon-home"})
 
-    homeIcon[0]['href'] = "../index2.html"
-    print(f)
-    print(homeIcon)
-    html = page.prettify("utf-8")
-    with open(f, "wb") as file:
-        file.write(html)
-    break
+    try:
+        homeIcon[0]['href'] = "../index2.html"
+        print(f)
+        print(homeIcon)
+        html = page.prettify("utf-8")
+        with open(f, "wb") as file:
+            file.write(html)
+    except:
+        print("Not Change",f)
+        continue
     #homeIcon = page.findAll("a")
     #print(homeIcon)
 
