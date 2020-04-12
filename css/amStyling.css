@@ -1,3 +1,8 @@
+.buttonGrid{
+    display: grid;
+    grid-template-columns: 75% 75%;
+}
+
 #quizHeader{
     text-align:left;
     background:white;

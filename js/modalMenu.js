@@ -4,8 +4,9 @@ function openCloseNav() {
   let element = document.getElementById("mySidenav");
 
   if (element.style.width == "250px" || element.style.width=="125px") {element.style.width = "0px";} 
-  else if(width > 450){element.style.width = "250px";}
-  else{element.style.width = "125px";}
+  else if(width > 800){element.style.width = "250px";}
+  else if(width > 600){element.style.width = "225px";}
+  else{element.style.width = "175px";}
 
   }
 
