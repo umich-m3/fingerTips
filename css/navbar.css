@@ -196,7 +196,7 @@
     }
 }
 
-@media(min-width:1px) and (max-width:500px){
+@media(max-width:500px){
     .titleStyling{
         text-align:center;
         font-size:calc(4.8vw);
@@ -217,12 +217,29 @@
        
     }
 
+    .mediumSmallTitleStyling{
+        text-align:center;
+        font-size:calc(3.2vw);
+        font-style:helvetica-nue;
+       
+    }
+
     .titleCenter{
         text-align:center;
         font-size:calc(5.0vw);
         margin-bottom:1%;
     }
 }
+
+@media(max-width:440px){
+    .mediumSmallTitleStyling{
+        text-align:center;
+        font-size:calc(2.8vw);
+        font-style:helvetica-nue;
+       
+    }
+}
+
 
 
 
