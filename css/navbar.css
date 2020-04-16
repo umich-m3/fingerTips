@@ -247,14 +247,7 @@
     }
 }
 
-@media(max-width:400px){
-    .mediumSmallQuizTitle{
-        text-align:center;
-        font-size:calc(2.4vw);
-        font-style:helvetica-nue;
-       
-    }
-}
+
 
 
 
