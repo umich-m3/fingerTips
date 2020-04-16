@@ -24,12 +24,14 @@
 </head>
 
 <body >
-<div class="">
+<div class="container">
 <!--Nav -->
 <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
   <div class="container-fluid">
     <div class="navbar-header">
-      <div class="navbar-brand brandctr">Disorders of Ocular Motility, Alignment, Pupils, and Lids</div>
+      <div class="navbar-brand brandctr"> <span class="mediumSmallQuizTitle scrapeMeTitle">
+          Disorders of Ocular Motility, Alignment, Pupils, and Lids
+    </span></div>
         <div class="navbar pull-left">
           <ul class="nav navbar-nav">
             <li><a href="../index.html"><span class="glyphicon glyphicon-home" style="font-size:27px;"></span></a> </li>
@@ -54,12 +56,7 @@
 <!-- Question Content-->
 <div id="status" class="alert alert-success" role="alert">&nbsp;</div>
 
-
-
-
-
 <div class="container">
-
               <div class="row" id="score_zone">
                 <div class="col-xs-4"><span class="btn">(<span class="currentScreen">&nbsp;</span> of <span class="totalScreens">&nbsp;</span>)</span></div>
                 <div class="col-xs-3"><span class="btn bg-grey">Correct: <span id="correctScore">0</span></span></div>
@@ -67,25 +64,25 @@
                 </div>
       </div>
 
-      <div class="quizColumns">
 
-            <div class="LEFTHOLD"></div>
 
-      <div class="LEFTCOLUMN">
-      <h3>A 21 year old woman reports blurred vision in both eyes of uncertain duration.</h3>
-<video width="100%" height="60%" controls style="">
-    <source src="movie.mp4" type="video/mp4">
+      <h4> <strong>A 21 year old woman reports blurred vision in both eyes of uncertain duration.</strong></h4>
+<video plays-inline="" width="100%" height="60%" controls style="">
+    <source src="../../images/Nystagmus/Infantile_Nystagmus_Syndrome_no_audio.mp4" type="video/mp4">
+      <source src="../../images/Nystagmus/Infantile_Nystagmus_Syndrome_no_audio.mp4" type="video/webm">
     <source src="../../images/Nystagmus/Infantile_Nystagmus_Syndrome_no_audio.mp4" type="video/ogg">
+      
   Your browser does not support the video tag.
   </video>
 
 
-<p><a type="button" class="btn btn-success" id="review" href="../../Nystagmus/Infantile_Sensory.html">Review Topic</a></p>
 
+
+<div class="buttonGrid">
+  <p><a type="button" class="btn btn-success" id="review" href="../../Nystagmus/Infantile_Sensory.html">Review Topic</a></p>
+  <p id="retake"><a type="button" class="btn btn-success">Restart Quiz</a></p>
 </div>
-
-<div class="RIGHTCOLUMN" style="margin-left:5%;">
-<h3>The proper management of this patient is</h3>
+<h4 style="font-weight:bold;">The proper management of this patient is</h4>
 <div class="panel-group" id="accordion">
   <div class="question">
     <div class="panel panel-default">
@@ -122,20 +119,42 @@
         <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" data-result="1"> D) Thorough ophthalmological examination</a> </h4>
       </div>
       <div id="collapseFour" class="panel-collapse collapse">
-        <div class="panel-body"> <span style="color: green">Correct!</span>  This is infantile nystagmus syndrome, an oscillatory disorder that begins within the first six months of life.  Its distinguishing feature is that the oscillation has an atypical horizontal waveform that remains horizontal in upgaze and downgaze, unlike all forms of acquired nystagmus, which convert to upbeat on upgaze.  It converts to jerk nystagmus on side gaze.  On the way toward side gaze to one side, the eyes pass through a “null zone” where the nystagmus amplitude is least.  Although this nystagmus often remains idiopathic, some patients have an underlying retinal or optic nerve disorder that must be discovered.  Hence the need for a thorough ophthalmological examination! </div>
+        <div class="panel-body"> <span style="color: green">Correct!</span> This is infantile nystagmus syndrome, an oscillatory disorder that begins within the first six months of life.  Its distinguishing feature is that the oscillation has an atypical horizontal waveform that remains horizontal in upgaze and downgaze, unlike all forms of acquired nystagmus, which convert to upbeat on upgaze.  This form of nystagmus usually converts to jerk nystagmus on side gaze.  On the way toward side gaze to one side, the eyes pass through a “null zone” where the nystagmus amplitude is least.  Although this nystagmus often remains idiopathic, some patients have an underlying retinal or optic nerve disorder that must be discovered.  Hence the need for a thorough ophthalmological examination! </div>
       </div>
     </div>
   </div>
 </div>
-</div>
-</div>
-</div>
-<!--QUIZ DIV-->
-
 <!-- End Question Content-->
 
 <!-- Footer-->
+<div id="imgModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="imgModal" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body">
+      <img width="100%" src="#"/>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+		</div>
+	</div>
+</div>
 
+<!-- Video Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+ <div class="modal-dialog">
+  <div class="modal-content">
+   <div class="modal-body">
+    <div class="embed-responsive embed-responsive-4by3">
+     <iframe class="embed-responsive-item" src=""></iframe>
+    </div>
+   </div>
+   <div class="modal-footer">
+     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+   </div>
+  </div>
+ </div>
+</div>
 <!-- End Footer-->
 <script src="../../js/jquery-2.1.0.min.js"></script> 
 <script src="../../js/bootstrap.min.js"></script>
