@@ -27,6 +27,7 @@ localStorage.saveResponseVision;
 
 	$(document).ready(userStatus);
 	
+	/*
 	if (!window.sessionStorage.getItem("isExecutedVision")) {
 		localStorage.scoreCorrectVision = 0;
 		localStorage.scoreIncorrectVision = 0;
@@ -35,6 +36,7 @@ localStorage.saveResponseVision;
 		localStorage.setItem("saveResponseVision", JSON.stringify(answeredPages));
 		window.sessionStorage.setItem("isExecutedVision", true);
 	}
+	*/
 
 	function retakeLauncher() {
 		// Sets localStorage to zero to restart the quiz

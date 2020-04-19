@@ -27,6 +27,7 @@ localStorage.saveResponseEye;
 
 	$(document).ready(userStatus);
 
+	/*
 	if (!window.sessionStorage.getItem("isExecutedEye")) {
 		localStorage.scoreCorrectEye = 0;
 		localStorage.scoreIncorrectEye = 0;
@@ -36,6 +37,7 @@ localStorage.saveResponseEye;
 		window.sessionStorage.setItem("isExecutedEye", true);
 		
 	}
+	*/
 
 	
 	function retakeLauncher() {

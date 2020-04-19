@@ -25,6 +25,7 @@ localStorage.saveResponse;
 	$("#percentGradereport").text(percentGrade.toFixed());
 	gradeQuiz();
 
+	/*
 	if (!window.sessionStorage.getItem("isExecuted")) {
 		localStorage.scoreCorrect1 = 0;
 		localStorage.scoreIncorrect = 0;
@@ -34,6 +35,7 @@ localStorage.saveResponse;
 		window.sessionStorage.setItem("isExecuted", true);
 		
 	}
+	*/
 
 	$(document).ready(userStatus);
 	
