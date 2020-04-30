@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 import requests
+import os
 import re
 import json
 
@@ -22,8 +23,6 @@ def getPageLinks(index,pageArray):
             pageArray.append(k['href'])
 
 
-
-
 index = getHtml("../index.html")
 pageArray = []
 topicArray = []
@@ -40,7 +39,7 @@ for word in f:
     no_linebreak = word[:-1]
     stopwords[no_linebreak] = 1
 
-
+'''
 for i in range(len(pageArray)):
     subArray = []
     subIndex = getHtml("../"+pageArray[i])
@@ -50,7 +49,44 @@ for i in range(len(pageArray)):
     for top in subArray:
         #print("../"+path+"/"+top)
         Files.append(path+"/"+top)
+'''
+Files = []
+anatomicFiles = os.listdir("../Quiz/Anatomic")
+EyeFiles = os.listdir("../Quiz/Eye_Movement_Disorder")
+OcularFiles = os.listdir("../Quiz/Ocular")
+VisionFiles = os.listdir("../Quiz/Vision_Disorder")
 
+for i in anatomicFiles:
+    if i[-1] != 's' and i != "Results.html":
+        Files.append("../Quiz/Anatomic/" + i)
+
+for i in EyeFiles:
+    if i[-1] != 's' and i != "Results.html":
+        Files.append("../Quiz/Eye_Movement_Disorder/" + i)
+
+for i in OcularFiles:
+    if i[-1] != 's' and i != "Results.html":
+        Files.append("../Quiz/Ocular/" + i)
+
+for i in VisionFiles:
+    if i[-1] != 's' and i != "Results.html":
+        Files.append("../Quiz/Vision_Disorder/" + i)
+
+for f in Files:
+    page = getHtml(f)
+    add = "target='_new' onclick='window.open(this.href); return false;'"
+    section = None
+    try:
+        section = page.find_all(id='review')[0]
+    except:
+        section = ""
+
+    section.find(">",10)
+    if section:
+        continue
+        #print(section)
+
+'''
 for f in Files:
     f = BACK + f
     page = getHtml(f)
@@ -96,7 +132,7 @@ print("var tipuesearch = {\"pages\": [")
 for m in mapArr:
     print(str(m) + ',')
 print("]};")
-
+'''
 
 
 
