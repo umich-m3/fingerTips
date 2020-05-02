@@ -26,7 +26,7 @@
         <div class="navbar-brand brandctr">Favorites</div>
           <div class="navbar pull-left">
             <ul class="nav navbar-nav">
-              <li><a href="javascript:history.back()"><span class="glyphicon glyphicon-home"></span></a></li>
+              <li><a href="index2.html"><span class="glyphicon glyphicon-home"></span></a></li>
             </ul>
             </div>
             </div><!-- /.navbar-header -->
@@ -95,10 +95,10 @@
         console.log(bookmark_array);
         //Discrepency Between Local And Server
         if (bookmark_array.length === 5){
-				bookmark += "<li><a href='" + bookmark_array[4]+ "'><strong>" + bookmark_array[0]+"</strong><br>"+ "<span class='small'>" + bookmark_array[1]+"</span><span class='pull-right glyphicon glyphicon-chevron-right small'></span></a></li>";
+				bookmark += "<li><a href='" + bookmark_array[4]+ "' ' target='_new' onclick='window.open(this.href); return false;'><strong>" + bookmark_array[0]+"</strong><br>"+ "<span class='small'>" + bookmark_array[1]+"</span><span class='pull-right glyphicon glyphicon-chevron-right small'></span></a></li>";
         }
         else{
-          bookmark += "<li><a href='" + bookmark_array[3]+ "'><strong>" + bookmark_array[0]+"</strong><br>"+ "<span class='small'>" + bookmark_array[1]+"</span><span class='pull-right glyphicon glyphicon-chevron-right small'></span></a></li>";
+          bookmark += "<li><a  href='" + bookmark_array[3]+ "' ' target='_new' onclick='window.open(this.href); return false;'><strong>" + bookmark_array[0]+"</strong><br>"+ "<span class='small'>" + bookmark_array[1]+"</span><span class='pull-right glyphicon glyphicon-chevron-right small'></span></a></li>";
         }
       } 
 				bookmark += "</ul>";
