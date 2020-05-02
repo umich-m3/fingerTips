@@ -64,7 +64,7 @@ html,body
     margin-right:auto;
     display:block;
     width:100vw;
-    height:25vh;
+    height:30vh;
 }
 .maizeTitle{
     color:#FFCB05;
@@ -96,6 +96,11 @@ html,body
 }
 
 @media(max-width:850px){
+    .waysTitleDiv{height:33vh;}
+
+}
+
+@media(max-width:850px){
     .waysToUseList{font-size:3.5vw;}
     .creditsText{font-size:2.75vw;}
     .waysTitleDiv{height:36vh;}
@@ -106,7 +111,7 @@ html,body
 @media(max-width:750px){
     .aHrefStyle{font-size:2vw;}
     .headerDiv{height:50vh;}
-    .waysTitleDiv{height:35vh;}
+    .waysTitleDiv{height:40vh;}
     .creditsDiv{height:20vh;}
 }
 
@@ -129,7 +134,7 @@ html,body
 
 @media(max-width:400px){
     .headerDiv{height:38vh;}
-    .waysTitleDiv{height:35vh;}
+    .waysTitleDiv{height:40vh;}
 
     .waysToUseDiv{
         height:25vh;
