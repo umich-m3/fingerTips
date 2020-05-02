@@ -23,7 +23,7 @@
       <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
     <div class="container-fluid">
       <div class="navbar-header">
-        <div class="navbar-brand brandctr">FAVORITES</div>
+        <div class="navbar-brand brandctr">Favorites</div>
           <div class="navbar pull-left">
             <ul class="nav navbar-nav">
               <li><a href="javascript:history.back()"><span class="glyphicon glyphicon-home"></span></a></li>
@@ -93,8 +93,14 @@
 				for	(index = 0; index < bookmarks.length; index++) {
         bookmark_array = bookmarks[index].split(':');
         console.log(bookmark_array);
+        //Discrepency Between Local And Server
+        if (bookmark_array.length === 5){
 				bookmark += "<li><a href='" + bookmark_array[4]+ "'><strong>" + bookmark_array[0]+"</strong><br>"+ "<span class='small'>" + bookmark_array[1]+"</span><span class='pull-right glyphicon glyphicon-chevron-right small'></span></a></li>";
-				} 
+        }
+        else{
+          bookmark += "<li><a href='" + bookmark_array[3]+ "'><strong>" + bookmark_array[0]+"</strong><br>"+ "<span class='small'>" + bookmark_array[1]+"</span><span class='pull-right glyphicon glyphicon-chevron-right small'></span></a></li>";
+        }
+      } 
 				bookmark += "</ul>";
 				}
 				else {
