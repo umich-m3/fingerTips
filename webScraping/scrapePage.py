@@ -22,8 +22,7 @@ def getPageLinks(index,pageArray):
         for k in href:
             pageArray.append(k['href'])
 
-
-index = getHtml("../index.html")
+index = getHtml("../index2.html")
 pageArray = []
 topicArray = []
 Files = []
@@ -32,14 +31,13 @@ mapArr = []
 BACK = "../"
 
 getPageLinks(index,pageArray)
-
-
 f = open('stopwords.txt', 'r')
 for word in f:
     no_linebreak = word[:-1]
     stopwords[no_linebreak] = 1
 
-'''
+
+
 for i in range(len(pageArray)):
     subArray = []
     subIndex = getHtml("../"+pageArray[i])
@@ -47,8 +45,9 @@ for i in range(len(pageArray)):
     #topicArray.append(subArray)
     path = pageArray[i].split("/")[0]
     for top in subArray:
-        #print("../"+path+"/"+top)
         Files.append(path+"/"+top)
+
+
 '''
 Files = []
 anatomicFiles = os.listdir("../Quiz/Anatomic")
@@ -132,7 +131,7 @@ print("var tipuesearch = {\"pages\": [")
 for m in mapArr:
     print(str(m) + ',')
 print("]};")
-'''
+
 
 
 
