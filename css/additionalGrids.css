@@ -21,6 +21,15 @@
     grid-row-gap: 0vh;
 }
 
+@media(max-width:850px) {
+    .videoPage{
+        display: initial;
+        grid-template-columns: initial;
+        grid-template-rows: initial;
+        grid-row-gap: initial;
+    }
+}
+
 .videoBorder{
     border:2px solid black;
 }
