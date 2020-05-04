@@ -167,7 +167,13 @@ li{
     margin-right:auto;
 }
 
+.smallerIndexTitle{
+  
+}
 
+.mediumIndexTitle{
+
+}
 
 
 @media(min-width:1800px) and(max-width:2100px) {
@@ -294,6 +300,14 @@ li{
         height:245px;
         margin-left:auto;
         margin-right:auto;
+    }
+
+    .smallerIndexTitle{
+        font-size:3vw;
+    }
+
+    .mediumIndexTitle{
+        font-size:3.5vw;
     }
     
 
