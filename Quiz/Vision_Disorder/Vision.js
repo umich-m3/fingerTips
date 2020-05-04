@@ -4,7 +4,7 @@ localStorage.saveResponseVision;
 	// in page variables
 	var scoreCorrect = localStorage.scoreCorrectVision;
 	var scoreIncorrect = localStorage.scoreIncorrectVision;
-	var clicked = "c";
+	var clicked = "cows";
 	var answered = 0;
 	var retrievedAnsweredPages = localStorage.getItem("saveResponseVision");
 	console.log(localStorage.getItem("saveResponseVision"));
