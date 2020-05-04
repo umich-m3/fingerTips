@@ -41,21 +41,33 @@ for i in range(len(pageArray)):
     getPageLinks(subIndex,subArray)
     #topicArray.append(subArray)
     path = pageArray[i].split("/")[0]
-    Files.append(path + "/" + "index.html")
+    #Files.append(path + "/" + "index.html")
     for top in subArray:
         #print("../"+path+"/"+top)
-        Files.append(path+"/"+top)
+        if top != "Videos.html" and top != "Section_Overview.html":
+            Files.append(path+"/"+top)
+
 
 for f in Files:
     f = BACK + f
     page = getHtml(f)
-    arr = f.split("/")
-    homeIcon = None
-    if arr[2] == "index.html":
-        homeIcon = page.findAll("a", {"href": "../index.html"})
-    else:
-        homeIcon = page.findAll("a", {"class": "glyphicon-home"})
+    
+    print(f)
+    try:
+        newLi = page.new_tag("li")
+        newLi["style"] = "list-style-type:none;"
 
+        page.find(id="wrapper").insert(0,newLi)
+        
+        html = page.prettify("utf-8")
+        with open(f, "wb") as file:
+            file.write(html)
+
+    except:
+        print("Nothing Happened")
+        continue
+
+    '''
     try:
         homeIcon[0]['href'] = "../index2.html"
         print(f)
@@ -66,6 +78,7 @@ for f in Files:
     except:
         print("Not Change",f)
         continue
+    '''
     #homeIcon = page.findAll("a")
     #print(homeIcon)
 
