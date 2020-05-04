@@ -1,6 +1,6 @@
 .buttonGrid{
     display: grid;
-    grid-template-columns: 75% 75%;
+    grid-template-columns: 75% 25%;
 }
 
 .myIframe {
