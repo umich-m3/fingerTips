@@ -74,7 +74,7 @@ html,body
 
 .creditsDiv{
     width:100vw;
-    height:15.5vh;
+    height:12vh;
     display:block;
     margin-left:auto;
     margin-right:auto;
@@ -103,9 +103,14 @@ html,body
 @media(max-width:850px){
     .waysToUseList{font-size:3.5vw;}
     .creditsText{font-size:2.75vw;}
-    .waysTitleDiv{height:36vh;}
-    .creditsDiv{height:23vh;}
+    .waysTitleDiv{height:30vh;}
+    .creditsDiv{height:12vh;}
+    .headerDiv{height:25vh;}
+    .waysToUseDiv{height:30vh;}
+}
 
+@media(max-width:800px){
+    .waysTitleDiv{height:35vh;}
 }
 
 @media(max-width:750px){
@@ -117,33 +122,33 @@ html,body
 
 @media(max-width:500px){
     .aHrefStyle{font-size:2.65vw;}
-    .headerDiv{height:40vh;}
-    .waysTitleDiv{height:35vh;}
+    .headerDiv{height:30vh;}
+    .waysTitleDiv{height:30vh;}
 
     .waysToUseDiv{
         height:25vh;
         grid-template-columns: 10% 20% 20% 20% 20% 10%;
     }
-    .waysToUseList{font-size:4.5vw;}
+    .waysToUseList{font-size:4vw;}
 
-    .creditsDiv{height:22vh;}
-    .headerTitle{font-size:6vw;}
+    .creditsDiv{height:12vh;}
+    .headerTitle{font-size:5vw;}
     
 
 }
 
 @media(max-width:400px){
-    .headerDiv{height:38vh;}
-    .waysTitleDiv{height:40vh;}
+    .headerDiv{height:30vh;}
+    .waysTitleDiv{height:30vh;}
 
     .waysToUseDiv{
         height:25vh;
     }
 
-    .waysToUseList{font-size:4.25vw;}
+    .waysToUseList{font-size:3.75vw;}
 
-    .creditsDiv{height:25vh;}
-    .creditsText{font-size:4.25vw;}
+    .creditsDiv{height:12vh;}
+    .creditsText{font-size:3.25vw;}
 }
 @media(min-width:1441px){
     .creditsDiv{
