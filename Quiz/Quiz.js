@@ -1,3 +1,4 @@
+/*
 if (!window.sessionStorage.getItem("isExecutedVision")) {
     localStorage.scoreCorrectVision = 0;
     localStorage.scoreIncorrectVision = 0;
@@ -36,3 +37,4 @@ if (!window.sessionStorage.getItem("isExecutedNero")) {
     window.sessionStorage.setItem("isExecutedNero", true);
     
 }
+*/
