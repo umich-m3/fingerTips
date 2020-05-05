@@ -86,7 +86,8 @@
 }
 
 .amMaizeNormal{
-    background-color:#FFCB05;
+    /*background-color:#FFCB05;*/
+    background-color:rgb(17, 211, 236);
 }
 
 nav .nav-pills .amBlueNormal:hover{
