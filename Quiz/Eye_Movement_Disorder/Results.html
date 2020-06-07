@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>The Eyes Have It</title>
+<title>Fingertips</title>
 <meta name="description" content="The Eyes Have It">
 <meta name="author" content="University of Michigan Medical School Information Services - Instructional Design and Technology Team">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes">
@@ -16,13 +16,16 @@
 <link href="../../css/modalMenu.css" rel="stylesheet">
 <link href="../../css/navbar.css" rel="stylesheet">
 <link href="../../css/additionalGrids.css" rel="stylesheet">
-
+<script src="https://smtpjs.com/v3/smtp.js"></script> 
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js">
+</script>
 <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 </head>
 
-<body >
+<body onload="javascript:printIncorrect()">
 <div class="container">
 <!--Nav -->
 <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
@@ -60,15 +63,53 @@
 		<p><strong>Correct: </strong><span id="correctScore">0</strong></p>
 			<p><strong>Incorrect: </strong><span id="incorrectScore">0</strong></p>
 			<p><strong>Score: </strong><span id="percentGradereport">0</span>%</p>
+			<div id="incorrectDiv">
+			</div>
 			<p id="retake"><a type="button" class="btn btn-success">Retake</a></p>
 			<p id=""><a type="button"  style="background-color:red;" onclick="window.print();return false;" class="btn btn-success">Print Results</a></p>
-  	</div>
+			<!--
+			<p id="r"><a  onclick="sendEmail();" type="button" class="btn btn-success"  style="background-color:blue;">Send Results</a></p>
+
+			
+			<div class="btn-group">
+				<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  Action
+				</button>
+				<div class="dropdown-menu">
+					<form>
+				  		<input type="text" placeholder="Type something..." id="myInput">
+				  		<a class="dropdown-item" href="#">Another action</a>
+				  		<a class="dropdown-item" href="#">Something else here</a>
+				  		<div class="dropdown-divider"></div>
+				  		<a class="dropdown-item" href="#">Separated link</a>
+					</form>
+				</div>
+			  </div>
+			  
+
+			  <div  class="dropdown btn-group" >
+				<a href="javascript:;" class="nav-link dropdown-toggle" data-toggle="dropdown">
+					<button type="button" class="btn btn-danger dropdown-toggle">
+						Action
+					  </button>
+			   </a>
+			   <form class="dropdown-menu"  onsubmit="tempEmail()">
+				<input type="text" placeholder="Sender Email" id="senderEmail">
+				<input type="email" placeholder="Recipient Email" id="recipientEmail">
+				<input type="text" placeholder="Name" id="nameInput">
+				<input type="submit"  value="Send">
+			  </form>
+			  -->
+			
+		</div>
+	</div>
 
 
 
 <script src="../../js/jquery-2.1.0.min.js"></script> 
 <script src="../../js/bootstrap.min.js"></script>
 <script src="Eye_Movement.js"></script>
+<script src="../../js/mail.js"></script>
 
 <script src="../../js/offcanvas.js"></script>
 	<script src="../../js/tehi_modals.js"></script>

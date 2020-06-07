@@ -4,6 +4,7 @@ localStorage.saveResponseNero;
 	// in page variables
 	var scoreCorrect = localStorage.scoreCorrectNero;
 	var scoreIncorrect = localStorage.scoreIncorrectNero;
+	var neroIncorrect = JSON.parse(localStorage.getItem("neroIncorrect"));
 	var clicked = "c";
 	var answered = 0;
 	var retrievedAnsweredPages = localStorage.getItem("saveResponseNero");
@@ -16,6 +17,7 @@ localStorage.saveResponseNero;
 	var passing = 80; //What is the passign percentage
 	
 	console.log(retrievedAnsweredPages);
+	console.log( JSON.parse(localStorage.getItem("neroIncorrect")));
 	// Sets scores to what is in local storage
 	$("#correctScore").text(localStorage.scoreCorrectNero);
 	$("#incorrectScore").text(localStorage.scoreIncorrectNero);
@@ -44,8 +46,10 @@ localStorage.saveResponseNero;
 		localStorage.scoreCorrectNero = 0;
 		localStorage.scoreIncorrectNero = 0;
 		localStorage.saveResponseNero;
-		var answeredPages = []
+		var answeredPages = [];
+		var resetNero = [];
 		localStorage.setItem("saveResponseNero", JSON.stringify(answeredPages));
+		localStorage.setItem("neroIncorrect", JSON.stringify(resetNero));
 		document.location.href='1.html';
 	}
 	
@@ -92,6 +96,8 @@ localStorage.saveResponseNero;
 			updateStatus();
 		} else if (clicked == "0") {
 			scoreIncorrect++
+			neroIncorrect.push(currentScreen);
+			localStorage.setItem("neroIncorrect", JSON.stringify(neroIncorrect));
 			localStorage.scoreIncorrectNero = scoreIncorrect;
 			answered++;
 			percentGrade == ((scoreCorrect/totalItems)*100);
@@ -137,3 +143,20 @@ localStorage.saveResponseNero;
 		pageInProgress--
 		window.location.href = pageInProgress+".html";
 	});
+
+	function printIncorrect(){
+		tempString = "<h2 style='color:red'><strong> Incorrect Questions: </strong> </h2> <h2> ";
+		fileBaseArr = window.location.toString().split("/");
+		fileBaseArr.pop();
+		fileBaseString = fileBaseArr.join("/");
+		for(i=0;i<neroIncorrect.length;i++){
+			numString = neroIncorrect[i].toString();
+			tempString += "<a target='_new' onclick='window.open(this.href); return false;' "
+			tempString += "href=" + fileBaseString + "/" + numString + ".html>";
+			tempString += (numString + " ");
+			tempString += "</a>";
+		}
+		tempString += "</h2>"
+		console.log(tempString);
+		document.getElementById('incorrectDiv').innerHTML = tempString;
+	}

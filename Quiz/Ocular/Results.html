@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>The Eyes Have It</title>
+<title>Fingertips</title>
 <meta name="description" content="The Eyes Have It">
 <meta name="author" content="University of Michigan Medical School Information Services - Instructional Design and Technology Team">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes">
@@ -22,7 +22,7 @@
   <![endif]-->
 </head>
 
-<body >
+<body onload="javascript:printIncorrect()">
 <div class="container">
 <!--Nav -->
 <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
@@ -62,6 +62,8 @@
 		<p><strong>Correct: </strong><span id="correctScore">0</strong></p>
 			<p><strong>Incorrect: </strong><span id="incorrectScore">0</strong></p>
 			<p><strong>Score: </strong><span id="percentGradereport">0</span>%</p>
+			<div id="incorrectDiv">
+			</div>
 			<p id="retake"><a type="button"  style="background-color:red;" class="btn btn-success">Retake</a></p>
 			<p id=""><a type="button" onclick="window.print();return false;" class="btn btn-success">Print Results</a></p>
   	</div>

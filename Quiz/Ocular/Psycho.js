@@ -6,6 +6,7 @@ localStorage.saveResponse;
 	var scoreIncorrect = localStorage.scoreIncorrect;
 	var clicked = "cow";
 	var answered = 0;
+	var psychoIncorrect = JSON.parse(localStorage.getItem("psychoIncorrect"));
 	var retrievedAnsweredPages = localStorage.getItem("saveResponse");
 	console.log(localStorage.getItem("saveResponse"));
 	var answeredPages = JSON.parse(retrievedAnsweredPages);
@@ -16,6 +17,7 @@ localStorage.saveResponse;
 	var passing = 80; //What is the passign percentage
 	
 	console.log(retrievedAnsweredPages);
+	console.log( JSON.parse(localStorage.getItem("psychoIncorrect")));
 	// Sets scores to what is in local storage
 	$("#correctScore").text(localStorage.scoreCorrect1);
 	$("#incorrectScore").text(localStorage.scoreIncorrect);
@@ -44,8 +46,10 @@ localStorage.saveResponse;
 		localStorage.scoreCorrect1 = 0;
 		localStorage.scoreIncorrect = 0;
 		localStorage.saveResponse;
-		var answeredPages = []
+		var answeredPages = [];
+		var resetPsycho = [];
 		localStorage.setItem("saveResponse", JSON.stringify(answeredPages));
+		localStorage.setItem("psychoIncorrect", JSON.stringify(resetPsycho));
 		document.location.href='1.html';
 	}
 	
@@ -91,7 +95,9 @@ localStorage.saveResponse;
 			percentGrade == ((scoreCorrect/totalItems)*100);
 			updateStatus();
 		} else if (clicked == "0") {
-			scoreIncorrect++
+			scoreIncorrect++;
+			psychoIncorrect.push(currentScreen);
+			localStorage.setItem("psychoIncorrect", JSON.stringify(psychoIncorrect));
 			localStorage.scoreIncorrect = scoreIncorrect;
 			answered++;
 			percentGrade == ((scoreCorrect/totalItems)*100);
@@ -137,3 +143,21 @@ localStorage.saveResponse;
 		pageInProgress--
 		window.location.href = pageInProgress+".html";
 	});
+
+	function printIncorrect(){
+		tempString = "<h2 style='color:red'><strong> Incorrect Questions: </strong> </h2> <h2> ";
+		fileBaseArr = window.location.toString().split("/");
+		fileBaseArr.pop();
+		fileBaseString = fileBaseArr.join("/");
+		for(i=0;i<psychoIncorrect.length;i++){
+			numString = psychoIncorrect[i].toString();
+			tempString += "<a target='_new' onclick='window.open(this.href); return false;' "
+			tempString += "href=" + fileBaseString + "/" + numString + ".html>";
+			tempString += (numString + " ");
+			tempString += "</a>";
+		}
+		tempString += "</h2>"
+		console.log(tempString);
+		document.getElementById('incorrectDiv').innerHTML = tempString;
+	}
+

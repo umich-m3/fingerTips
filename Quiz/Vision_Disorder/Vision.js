@@ -4,6 +4,7 @@ localStorage.saveResponseVision;
 	// in page variables
 	var scoreCorrect = localStorage.scoreCorrectVision;
 	var scoreIncorrect = localStorage.scoreIncorrectVision;
+	var visionIncorrect = JSON.parse(localStorage.getItem("visionIncorrect"));
 	var clicked = "cows";
 	var answered = 0;
 	var retrievedAnsweredPages = localStorage.getItem("saveResponseVision");
@@ -16,6 +17,7 @@ localStorage.saveResponseVision;
 	var passing = 80; //What is the passign percentage
 	
 	console.log(retrievedAnsweredPages);
+	console.log( JSON.parse(localStorage.getItem("visionIncorrect")));
 	// Sets scores to what is in local storage
 	$("#correctScore").text(localStorage.scoreCorrectVision);
 	$("#incorrectScore").text(localStorage.scoreIncorrectVision);
@@ -43,8 +45,10 @@ localStorage.saveResponseVision;
 		localStorage.scoreCorrectVision = 0;
 		localStorage.scoreIncorrectVision = 0;
 		localStorage.saveResponseVision;
-		var answeredPages = []
+		var answeredPages = [];
+		var resetVision = [];
 		localStorage.setItem("saveResponseVision", JSON.stringify(answeredPages));
+		localStorage.setItem("visionIncorrect", JSON.stringify(resetVision));
 		document.location.href='1.html';
 	}
 	
@@ -90,7 +94,9 @@ localStorage.saveResponseVision;
 			percentGrade == ((scoreCorrect/totalItems)*100);
 			updateStatus();
 		} else if (clicked == "0") {
-			scoreIncorrect++
+			scoreIncorrect++;
+			visionIncorrect.push(currentScreen);
+			localStorage.setItem("visionIncorrect", JSON.stringify(visionIncorrect));
 			localStorage.scoreIncorrectVision = scoreIncorrect;
 			answered++;
 			percentGrade == ((scoreCorrect/totalItems)*100);
@@ -136,3 +142,20 @@ localStorage.saveResponseVision;
 		pageInProgress--
 		window.location.href = pageInProgress+".html";
 	});
+
+	function printIncorrect(){
+		tempString = "<h2 style='color:red'><strong> Incorrect Questions: </strong> </h2> <h2> ";
+		fileBaseArr = window.location.toString().split("/");
+		fileBaseArr.pop();
+		fileBaseString = fileBaseArr.join("/");
+		for(i=0;i<visionIncorrect.length;i++){
+			numString = visionIncorrect[i].toString();
+			tempString += "<a target='_new' onclick='window.open(this.href); return false;' "
+			tempString += "href=" + fileBaseString + "/" + numString + ".html>";
+			tempString += (numString + " ");
+			tempString += "</a>";
+		}
+		tempString += "</h2>"
+		console.log(tempString);
+		document.getElementById('incorrectDiv').innerHTML = tempString;
+	}
