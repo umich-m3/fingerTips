@@ -5,6 +5,7 @@ localStorage.saveResponseNero;
 	var scoreCorrect = localStorage.scoreCorrectNero;
 	var scoreIncorrect = localStorage.scoreIncorrectNero;
 	var neroIncorrect = JSON.parse(localStorage.getItem("neroIncorrect"));
+	if (neroIncorrect == null){neroIncorrect = [];}
 	var clicked = "c";
 	var answered = 0;
 	var retrievedAnsweredPages = localStorage.getItem("saveResponseNero");

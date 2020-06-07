@@ -7,6 +7,7 @@ localStorage.saveResponse;
 	var clicked = "cow";
 	var answered = 0;
 	var psychoIncorrect = JSON.parse(localStorage.getItem("psychoIncorrect"));
+	if(psychoIncorrect == null){psychoIncorrect = [];}
 	var retrievedAnsweredPages = localStorage.getItem("saveResponse");
 	console.log(localStorage.getItem("saveResponse"));
 	var answeredPages = JSON.parse(retrievedAnsweredPages);

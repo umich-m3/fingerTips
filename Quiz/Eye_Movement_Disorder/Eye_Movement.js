@@ -5,6 +5,7 @@ localStorage.saveResponseEye;
 	var scoreCorrect = localStorage.scoreCorrectEye;
 	var scoreIncorrect = localStorage.scoreIncorrectEye;
 	var eyeIncorrect = JSON.parse(localStorage.getItem("eyeIncorrect"));
+	if(eyeIncorrect == null){eyeIncorrect = [];}
 	var clicked = "co";
 	var answered = 0;
 	var retrievedAnsweredPages = localStorage.getItem("saveResponseEye");

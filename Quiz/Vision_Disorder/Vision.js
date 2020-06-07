@@ -5,6 +5,7 @@ localStorage.saveResponseVision;
 	var scoreCorrect = localStorage.scoreCorrectVision;
 	var scoreIncorrect = localStorage.scoreIncorrectVision;
 	var visionIncorrect = JSON.parse(localStorage.getItem("visionIncorrect"));
+	if(visionIncorrect == null){visionIncorrect = [];}
 	var clicked = "cows";
 	var answered = 0;
 	var retrievedAnsweredPages = localStorage.getItem("saveResponseVision");
