@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="" name="description"/>
+  <meta content="" name="author"/>
+  <title>
+   Fingertips
+  </title>
+  <!-- Bootstrap core CSS -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Custom styles for this template -->
+  <link href="../css/offcanvas.css" rel="stylesheet"/>
+  <!-- Custom styles for TEHI app -->
+  <link href="../css/tehi.css" rel="stylesheet"/>
+  <link href="../css/amStyling.css" rel="stylesheet"/>
+  <link href="../css/modalMenu.css" rel="stylesheet"/>
+  <link href="../css/navbar.css" rel="stylesheet"/>
+  <link href="../css/additionalGrids.css" rel="stylesheet"/>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+   <div class="amListingColumns">
+    <span class="menuSize" onclick="openCloseNav()" style="cursor:pointer;font-size:50px;">
+     ☰
+    </span>
+    <div class="amTwoArrows">
+     <a href="Visual_Fields.html" id="" style="">
+      <span class="glyphicon glyphicon-chevron-left" style="font-size:30px;color:white;">
+      </span>
+     </a>
+     <div>
+     </div>
+     <a href="Vision_Pathways.html" id="" style="">
+      <span class="glyphicon glyphicon-chevron-right" style="font-size:30px;color:white;">
+      </span>
+     </a>
+    </div>
+    <div>
+    </div>
+    <span class="titleStyling scrapeMeTitle">
+     Overview Videos
+    </span>
+   </div>
+  </nav>
+  <div class="amBodyColumns">
+   <div id="fillerSpace">
+   </div>
+   <h1 style="text-align:center;margin-bottom:5vh;">
+    Ocular Oscillations
+   </h1>
+  
+   </span>
+  </div>
+  <div class="videoPage" style="">
+   <div>
+   </div>
+   <div style="text-align:center;">
+    <h2>
+     <strong>
+      Ocular Oscillations
+     </strong>
+    </h2>
+   </div>
+   <div>
+   </div>
+   <div>
+   </div>
+   <div class="myIframe">
+    <iframe src="https://www.youtube.com/embed/HXOaRGNnijU" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true">
+    </iframe>
+   </div>
+   <div>
+   </div>
+  </div>
+ 
+  <div class="sidenav" id="mySidenav">
+   <a class="glyphicon glyphicon-home" href="../index2.html">
+   </a>
+   <h1 style="">
+    <a href="index.html" style="font-size:100%;">
+     Overview Videos
+    </a>
+   </h1>
+   <a class="" href="Vision_Pathways.html">
+    Vision Pathways
+   </a>
+   <a class="" href="Supranuclear.html">
+    Supranuclear Ocular Motor Pathways
+   </a>
+   <a class="" href="Ocular_Motor.html">
+    Ocular Motor Cranial Nerve Pathways
+   </a>
+   <a href="Pupil_Pathways.html">
+    Pupil Pathways
+   </a>
+   <a href="Visual_Fields.html">
+    Visual Field Examination
+   </a>
+   <a href="Ocular_Oscillations.html">
+    Ocular Oscillations
+   </a>
+  </div>
+  <!-- Image Modal -->
+  <div aria-hidden="true" aria-labelledby="imgModal" class="modal fade" id="imgModal" role="dialog" tabindex="-1">
+   <div class="modal-dialog">
+    <div class="modal-content">
+     <div class="modal-body">
+      <img src="#" width="100%"/>
+     </div>
+     <div class="modal-footer">
+      <button class="btn btn-default" data-dismiss="modal" type="button">
+       Close
+      </button>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- Video Modal -->
+  <div aria-hidden="true" aria-labelledby="videoModal" class="modal fade" id="videoModal" role="dialog" tabindex="-1">
+   <div class="modal-dialog">
+    <div class="modal-content">
+     <div class="modal-body">
+      <div class="embed-responsive embed-responsive-4by3">
+       <iframe class="embed-responsive-item" src="">
+       </iframe>
+      </div>
+     </div>
+     <div class="modal-footer">
+      <button class="btn btn-default" data-dismiss="modal" type="button">
+       Close
+      </button>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="../js/jquery-1.11.1.min.js">
+  </script>
+  <script src="../js/bootstrap.min.js">
+  </script>
+  <script src="../js/offcanvas.js">
+  </script>
+  <script src="../js/tehi_modals.js">
+  </script>
+  <script src="../js/bookmark.js">
+  </script>
+  <script src="../js/iscroll.js">
+  </script>
+  <script src="../js/accordion-state.js">
+  </script>
+  <script src="../js/modalMenu.js">
+  </script>
+  <!--Image zoom-->
+  <script>
+   var myScroll;
+    function loaded() {
+    myScroll = new iScroll('wrapper',
+    { zoom:true, zoomMax: 4 });
+    }
+    
+    document.addEventListener('DOMContentLoaded', loaded, false);
+  </script>
+  <script>
+   loaded();
+  </script>
+  <!-- Close offcanvas menu when click on a menu link 
+  <script>
+	 $('#sectionmenu a').click(function(e) {
+ 		$('.row-offcanvas').toggleClass('active')
+ 	 });
+ </script>-->
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <!--<script src="../js/ie10-viewport-bug-workaround.js"></script>-->
+ </body>
+</html>
