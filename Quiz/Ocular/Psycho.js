@@ -54,6 +54,15 @@ localStorage.saveResponse;
 		document.location.href='1.html';
 	}
 	
+	// Resets first page if either score is null
+	function resetIfEmpty(){
+		if(scoreCorrect == null || scoreIncorrect == null){
+			console.log("reset");
+			retakeLauncher();
+		}
+	}
+
+	
 	//evaluates the user score for passing
 	function gradeQuiz() {
 		if (percentGrade > passing) {

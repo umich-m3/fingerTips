@@ -42,6 +42,14 @@ localStorage.saveResponseNero;
 	
 	$(document).ready(userStatus);
 	
+	// Resets first page if either score is null
+	function resetIfEmpty(){
+		if(scoreCorrect == null || scoreIncorrect == null){
+			console.log("reset");
+			retakeLauncher();
+		}
+	}
+
 	function retakeLauncher() {
 		// Sets localStorage to zero to restart the quiz
 		localStorage.scoreCorrectNero = 0;
