@@ -95,14 +95,11 @@ html,body
     margin-left:7.5%;
 }
 
-@media(max-width:850px){
-    .waysTitleDiv{height:33vh;}
 
-}
 
 @media(max-width:850px){
-    .waysToUseList{font-size:3.5vw;}
-    .creditsText{font-size:2.75vw;}
+    .waysToUseList{font-size:3vw;}
+    .creditsText{font-size:2.5vw;}
     .waysTitleDiv{height:30vh;}
     .creditsDiv{height:12vh;}
     .headerDiv{height:25vh;}
