@@ -98,7 +98,6 @@ html,body
 
 
 @media(max-width:1281px){
-    .waysToUseList{font-size:1.2vw;}
     .creditsDiv{font-size: 1.5vw;}
     .waysTitleDiv{height:37.5vh;}
 }
@@ -108,6 +107,7 @@ html,body
 @media(max-width:1024px){
         .waysToUseList{font-size:1.375vw;}
         .creditsDiv{font-size: 1.625vw;}
+        .waysTitleDiv{height:40vh;}
 }
 
 @media(max-width:850px){
@@ -118,7 +118,6 @@ html,body
 }
 
 @media(max-width:800px){
-    .waysTitleDiv{height:40vh;}
     .waysToUseList{font-size:1.75vw;}
 }
 
