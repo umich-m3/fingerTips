@@ -122,7 +122,7 @@ for f in Files:
     for w in goodWords:
         spaceWords += w
         spaceWords += ", "
-    Map = {"title": title, "text": section, "tags": spaceWords, "loc": f[3:]}
+    Map = {"title": title.strip(), "text": section.strip(), "tags": spaceWords, "loc": f[3:]}
     mapArr.append(Map)
 
 #Formatting is good but start new line for every new topic
